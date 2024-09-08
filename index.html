@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My blog</title>
+    <title>DelphyM's blog</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=450px, initial-scale=0.5" />
   </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1>
-    <h2>Kia ora te Ao, ko Daniel ahau</h2>
-    <p>This is the beginning of my website home page.</p>
-    <p>It will eventually contain a list of links to all my blogs.</p>
-    <p>
-      <ul>
-        <li><a href="./blog/te-houtaewa-template.html">The Story of Te Houtaewa</a></li>
-        <li><a href="./blog/identity-values.html">Identity and Values</a></li>
-        <li><a href="#" id="blog3">Blog 3</a></li>
-      </ul>
-    </p>
-    <p>
-      It can perfectly works locally from
-      <a href="https://httpd.apache.org/">Apache web server</a> or via
-      <a href="https://vitejs.dev/">Vite</a>.
-    </p>
+    <header>
+      <div id="div-0" class="container">
+        <nav>
+          <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="blogs">Blogs</a>
+              <ul>
+                <li><a href="#" id="blog1">Blog 1</a></li>
+                <li><a href="#" id="blog2">Blog 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="div-1"  class="container">
+      <div id="div-2h">
+        <h1>Kia ora Taiao! (Hello World!)</h1>
+        <h2>Kia ora te Ao, ko Daniel ahau</h2>
+      </div>
+      <div id="div-2"  class="container">
+      <p>This is the beginning of my website home page.</p>
+      <p>It will eventually contain a list of links to all my blogs.</p>
+      <p>
+        <ul>
+          <li><a href="./blog/te-houtaewa-template.html">The Story of Te Houtaewa</a></li>
+          <li><a href="./blog/identity-values.html">Identity and Values</a></li>
+          <li><a href="#" id="blog3">Blog 3</a></li>
+        </ul>
+      </p>
+      <p>
+        It can perfectly works locally from
+        <a href="https://httpd.apache.org/">Apache web server</a> or via
+        <a href="https://vitejs.dev/">Vite</a>.
+      </p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 DelphyM. All rights reserved.</p>
+      <p>Contact: <a href="mailto:delphy@trashmail.fr">delphy@trashmail.fr</a></p>
+      <p>Updated: 2024-09-01</p>
+      <p>Version 0.1</p>
+    </footer>
   </body>
 </html>
