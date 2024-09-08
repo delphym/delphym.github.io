@@ -1,2 +1,2 @@
 # delphym.github.io
-My Blog
+[My Blogs](https://delphym.github.io)
