@@ -4,15 +4,7 @@ body {
   color: #869816;
   font-family: "Macondo", cursive;
   background: linear-gradient(305deg, #022A35, #0a3541);
-}
-footer {
-  background-color: #0a3642;
-  color: #869816;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  font-family: "ubuntu-mono-regular", cursive;
-  border-top: 1px solid #869816;
+  /* border: 1px solid red; */
 }
 nav {
   border-radius: 20px;
@@ -93,6 +85,18 @@ h1 {
                 0 0 0.2em rgba(206, 212, 35, 0.19);
 }
 
+footer {
+  background-color: #0a3642;
+  color: #869816;
+  font-size: 11px;
+  font-family: "ubuntu-mono-regular", cursive;
+  border-top: 1px solid #869816;
+  /* border: 1px solid red; */
+  padding: 10px 20px; /* Padding to balance spacing */
+  width: 76.5%; /* Match the width of the other containers */
+  margin: 0 auto; /* Center the footer horizontally */
+  text-align: center; /* Align text to the left like the rest of the content */
+}
 #div-1a {
   width: 300px;
   height: 200px;
@@ -114,4 +118,12 @@ h1 {
   width: 80%;
   max-width: 1024px;
   margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.div-footer {
+  /* width: 70%; */
+  /* height: 50px; */
+  /* padding-top: 10px; */
+
 }
