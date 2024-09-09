@@ -10,11 +10,10 @@ nav {
   border-radius: 20px;
   color: #d2dc9b;
   width: 480px;
-  /* background: linear-gradient(90deg, #414141, #0a3642); */
-  /* color: rgba(65, 65, 65, 0.2); */
   background: linear-gradient(90deg, rgba(65, 65, 65 ,0.1), rgba(00, 36, 42, 0.4));
   box-shadow: 0px 10px 40px 5px rgba(206, 212, 35, 0.19),
               0 6px 6px rgba(168, 54, 54, 0.23);
+  /* border: 1px solid greenyellow; To see the boundaries */
 }
 /* Main menu list */
 nav ul {
@@ -92,11 +91,37 @@ footer {
   font-family: "ubuntu-mono-regular", cursive;
   border-top: 1px solid #869816;
   /* border: 1px solid red; */
-  padding: 10px 20px; /* Padding to balance spacing */
-  width: 76.5%; /* Match the width of the other containers */
-  margin: 0 auto; /* Center the footer horizontally */
-  text-align: center; /* Align text to the left like the rest of the content */
+  /* padding: 10px 0; */
+  /* Padding to balance spacing */
+  /* padding: 10px 20px; */ /* Padding to balance spacing */
+  /* width: 76.5%; /*Match the width of the other containers*/
+  /* margin: 0 auto; /* Center the footer horizontally */
+  /* text-align: center; /* Align text to the left like the rest of the content */
+  position: relative;
 }
+footer .container {
+  /* padding: 0 20px; */
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container.narrow {
+  /* background-color: #0a3642; */
+  width: 480px; /* Match NAV width */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: lightblue; For visibility */
+  /* border: 1px solid greenyellow; To see the boundaries */
+  margin-left: -90px;
+}
+footer p {
+  margin: 5px 0;
+}
+
 #div-1a {
   width: 300px;
   height: 200px;
@@ -119,11 +144,4 @@ footer {
   max-width: 1024px;
   margin: 0 auto;
   /* border: 1px solid red; */
-}
-
-.div-footer {
-  /* width: 70%; */
-  /* height: 50px; */
-  /* padding-top: 10px; */
-
 }
