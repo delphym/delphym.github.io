@@ -24,3 +24,15 @@
   font-weight: 700;
   font-style: italic;
 }
+
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
