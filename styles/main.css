@@ -1,10 +1,14 @@
 @import url("./font.css");
 body {
-  /* background-color: #0a3642; */
-  color: #869816;
+  color: #a6b82b;
   font-family: "Macondo", cursive;
   background: linear-gradient(305deg, #022A35, #0a3541);
   /* border: 1px solid red; */
+}
+
+h2 {
+  color: #d2dc9b; /* Lighter color for better contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 nav {
   border-radius: 20px;
