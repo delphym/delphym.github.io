@@ -10,9 +10,6 @@ header_pages:
   - about.md
   - README.md
 
-plugins:
-  - jekyll-remote-theme # add this line to the plugins list if you have one
-
 include:
   - README.md
 
