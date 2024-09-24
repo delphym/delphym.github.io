@@ -1,28 +1,31 @@
-@import url("./font.css");
+@import url('./font.css');
 body {
   /* background-color: #0a3642; */
   color: #a6b82b;
-  font-family: "Macondo", cursive;
-  background: linear-gradient(305deg, #022A35, #0a3541);
+  font-family: 'Macondo', cursive;
+  background: linear-gradient(305deg, #022a35, #0a3541);
   /* border: 1px solid red; */
 }
 
 /* Specific styles for the learning plan */
-body.learning-plan, #learning-plan {
+body.learning-plan,
+#learning-plan {
   /* font-family: "Josefin Sans", sans-serif; */
   /* font-family: "Baloo 2", sans-serif; */
   /* font-family: "Ranchers", sans-serif; */
   /* font-family: "Chewy", sans-serif; */
   /* font-family: "Amatic SC", sans-serif; */
   /* font-family: "Macondo", cursive; */
-  font-family: "Sofadi One", cursive;
+  font-family: 'Sofadi One', cursive;
 
   line-height: 1.6;
   /* border: 1px solid red; */
 }
 
-body.learning-plan h1, body.learning-plan h2, body.learning-plan nav{
-  font-family: "Macondo", cursive;
+body.learning-plan h1,
+body.learning-plan h2,
+body.learning-plan nav {
+  font-family: 'Macondo', cursive;
 }
 
 h2 {
@@ -32,11 +35,17 @@ h2 {
 nav {
   border-radius: 20px;
   color: #d2dc9b;
-  width: 480px;
-  background: linear-gradient(90deg, rgba(65, 65, 65 ,0.1), rgba(00, 36, 42, 0.4));
+  /* width: 480px; */
+  background: linear-gradient(
+    90deg,
+    rgba(65, 65, 65, 0.1),
+    rgba(00, 36, 42, 0.4)
+  );
   box-shadow: 0px 10px 40px 5px rgba(206, 212, 35, 0.19),
-              0 6px 6px rgba(168, 54, 54, 0.23);
+    0 6px 6px rgba(168, 54, 54, 0.23);
   /* border: 1px solid greenyellow; To see the boundaries */
+  /* display: flex; /*
+  /* justify-content: center;  */
 }
 /* Main menu list */
 nav ul {
@@ -64,7 +73,7 @@ nav ul ul {
   z-index: 1; /* Make sure it appears above other elements */
   white-space: nowrap; /* Prevent text wrapping */
   box-shadow: 0px 10px 40px 10px rgba(206, 212, 35, 0.19),
-              0 6px 6px rgba(168, 54, 54, 0.23);
+    0 6px 6px rgba(168, 54, 54, 0.23);
 }
 /* Show submenu on hover */
 nav ul li:hover > ul {
@@ -80,7 +89,7 @@ nav ul ul li {
 nav ul ul li a {
   padding: 5px 10px;
   display: block;
-  color: #d2dc9b;  /* Same color as main menu items */
+  color: #d2dc9b; /* Same color as main menu items */
   white-space: nowrap; /* Ensure no line breaks (but probably redundant) */
 }
 /* Hover effect for submenu links */
@@ -102,16 +111,15 @@ a:hover {
 }
 
 h1 {
-  text-shadow: 1px 1px 2px red,
-                0 0 1em rgba(168, 54, 54, 0.23),
-                0 0 0.2em rgba(206, 212, 35, 0.19);
+  text-shadow: 1px 1px 2px red, 0 0 1em rgba(168, 54, 54, 0.23),
+    0 0 0.2em rgba(206, 212, 35, 0.19);
 }
 
 footer {
   background-color: #0a3642;
   color: #869816;
   font-size: 11px;
-  font-family: "ubuntu-mono-regular", cursive;
+  font-family: 'ubuntu-mono-regular', cursive;
   border-top: 1px solid #869816;
   /* border: 1px solid red; */
   /* padding: 10px 0; */
@@ -155,7 +163,7 @@ footer p {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 10px 40px 5px rgba(206, 212, 35, 0.19),
-              0 6px 6px rgba(168, 54, 54, 0.23);
+    0 6px 6px rgba(168, 54, 54, 0.23);
   transition: transform 0.3s ease-in-out;
 }
 #div-1a:hover {
