@@ -1,3 +1,8 @@
+---
+layout: default
+title: "HTML-CSS Post | Technical Blog"
+# permalink: /blog/my-blog-post.html
+---
 # HTML & CSS Blog
 To make easier to test the *blog* post locally it's recommended to run a web server locally...
 ### Starting your own local web server
