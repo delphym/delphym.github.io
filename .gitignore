@@ -1,0 +1,21 @@
+# Node modules
+node_modules
+
+# Logs
+*.log
+
+# SQLite DBs
+*.sqlite3
+
+# coverage report
+coverage/*
+
+# Dotenv env settings
+.env
+
+# Editor directories and files
+.DS_Store
+.vscode/*
+
+tags
+dist

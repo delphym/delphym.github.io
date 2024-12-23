@@ -1,0 +1,4 @@
+/* src/styles/main.css */
+@import './input.css';
+@import './App.css';
+@import './media.css';

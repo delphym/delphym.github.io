@@ -1,0 +1,187 @@
+h1 {
+  font-size: 80px !important;
+}
+
+h2 {
+  font-size: 30px !important;
+}
+
+h3 {
+  font-size: 25px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+li,
+p {
+  font-size: 17px !important;
+}
+
+.nav-left {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.nav-center {
+  flex: 0 1 0;
+}
+
+.nav-right {
+  flex: 1;
+  padding-right: 30px;
+}
+
+section {
+  padding-bottom: 60px;
+}
+
+#root {
+  color: white;
+  background-color: rgb(29, 49, 85);
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+nav {
+  height: 70px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-tab {
+  padding: 0 10px;
+}
+
+.nav-tab:hover {
+  color: rgb(235, 186, 52);
+}
+
+.nav-tab:hover .nav-line {
+  border-top: 2px solid white;
+  width: 100%;
+  border-color: rgb(235, 186, 52);
+}
+
+.nav-line {
+  flex: 1 1;
+  border-top: 2px solid white;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.content-width {
+  width: 80vw;
+}
+
+.content-box {
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  gap: 40px;
+}
+
+.section-box {
+  display: flex;
+  align-items: center;
+}
+
+.about-box {
+  padding-right: 100px;
+}
+
+.profile-img-box {
+  border-radius: 50%;
+  border: 3px solid rgb(82, 82, 82);
+  overflow: hidden;
+  width: 180px;
+  height: auto;
+  flex: 0 0 180px;
+}
+
+.profile-img-box > img {
+  width: 180px;
+  height: auto;
+}
+
+#skills {
+}
+
+.skills-tiles {
+  flex-flow: row wrap;
+}
+
+.skill-brick {
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(19, 40, 80);
+  background-color: rgb(50, 84, 146);
+}
+
+.proj-con {
+  display: flex;
+  align-self: stretch;
+  gap: 100px;
+}
+
+.proj-left {
+}
+
+.proj-right {
+  flex: 1 0 50%;
+}
+
+.projects-box {
+  gap: 120px;
+  flex-direction: column;
+  padding: 50px 50px;
+  display: flex;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a.link {
+  text-decoration: underline !important;
+  color: rgb(241, 114, 110) !important;
+}
+
+.proj-img-sec {
+}
+
+.proj-img-sec > img {
+  width: 100%;
+}
+
+.contact-link {
+}
+
+.contact-link:hover {
+  color: rgb(241, 114, 110);
+}
+
+.cv-box {
+  padding: 5px 10px;
+  background-color: rgb(201, 64, 64);
+  border-radius: 5px;
+  border: 2px solid rgb(189, 41, 41);
+  width: max-content;
+}
+
+.cv-box:hover {
+  background-color: rgb(167, 46, 46);
+}
+
+.cv-box:active {
+  background-color: rgb(138, 34, 34);
+}
+
+.nav-text {
+  font-size: 22px;
+}
