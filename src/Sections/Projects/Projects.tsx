@@ -116,7 +116,8 @@ export default function Projects() {
                     }}
                   >
                     This project is built using both front-end and back-end
-                    technologies. Here’s a brief overview of the approach:
+                    technologies.
+                    {/* Here’s a brief overview of the approach: */}
                   </p>
                 </div>
               </div>
