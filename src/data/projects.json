@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Stellar Share",
+    "description": "Community sharing app with a sci-fi theme",
+    "mainImage": "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/StelarShare.webp",
+    "additionalImages": [
+      "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/TrolleGuy.png"
+    ],
+    "techStack": [
+      { "name": "CSS", "icon": "faCss" },
+      { "name": "JavaScript", "icon": "faJs" },
+      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "React", "icon": "faReact" },
+      { "name": "React Charts", "icon": "" }
+    ],
+    "links": {
+      "deployment": "https://stellar-share-mania-roa-24.pushed.nz/",
+      "github": "https://github.com/manaia-roa-2024/stellar-share/"
+    }
+  }]
