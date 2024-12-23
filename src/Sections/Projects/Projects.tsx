@@ -6,12 +6,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-import { Box, VertBox } from '../../Components/Box'
 import SkillTile from '../Skills/SkillTile'
 import projectData from '../../data/projects.json'
 
 // Map string keys from JSON to actual Font Awesome icon objects:
-const iconsMap = {
+const iconsMap: { [key: string]: any } = {
   faCss,
   faJs,
   faNodeJs,
@@ -164,7 +163,8 @@ export default function Projects() {
                 }}
               >
                 {project.techStack?.map((tech, i) => {
-                  const icon = iconsMap[tech.icon] || tech.icon
+                  const icon =
+                    iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
                   return (
                     <SkillTile
                       key={i}

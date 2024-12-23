@@ -85,7 +85,8 @@ export default function ProjectsDynamic() {
               <h3 className="font-bold">Tech Stack</h3>
               <Box className="skills-tiles" gap="10px">
                 {project.techStack?.map((tech, i) => {
-                  const icon = iconsMap[tech.icon] || tech.icon
+                  const icon =
+                    iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
                   return <SkillTile key={i} icon={icon} text={tech.name} />
                 })}
               </Box>
