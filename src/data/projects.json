@@ -7,14 +7,62 @@
       "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/TrolleGuy.png"
     ],
     "techStack": [
-      { "name": "CSS", "icon": "faCss" },
+      { "name": "Tailwind CSS", "icon": "/images/tailwind-css-2.svg" },
       { "name": "JavaScript", "icon": "faJs" },
       { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" },
-      { "name": "React Charts", "icon": "" }
+      { "name": "SQLite", "icon": "faDatabase" },
+      { "name": "Auth0", "icon": "/images/auth0.svg" }
     ],
     "links": {
       "deployment": "https://stellar-share-mania-roa-24.pushed.nz/",
       "github": "https://github.com/manaia-roa-2024/stellar-share/"
     }
-  }]
+  },
+  {
+    "title": "Bird Collection",
+    "description": "A Web application keeping a detailed list of birds observations.",
+    "mainImage": "/images/birdCollection.jpg",
+    "techStack": [
+      { "name": "Tailwind CSS", "icon": "/images/tailwind-css-2.svg" },
+      { "name": "JavaScript", "icon": "faJs" },
+      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "React", "icon": "faReact" },
+      { "name": "SQLite", "icon": "faDatabase" }
+    ],
+    "links": {
+      "deployment": "http://delphym-mania-chc-24-birds-collection.devacademy.nz/",
+      "github": "https://github.com/manaia-roa-2024/my-fullstack-collection/tree/daniel"
+    }
+  },
+  {
+    "title": "Dog Dating App",
+    "description": "FullStack single-page application for canine connections.",
+    "mainImage": "/images/dogApp.png",
+    "techStack": [
+      { "name": "CSS", "icon": "faCss" },
+      { "name": "JavaScript", "icon": "faJs" },
+      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "React", "icon": "faReact" }
+    ],
+    "links": {
+      "deployment": "N/A",
+      "github": "https://github.com/manaia-roa-2024/group1"
+    }
+  },
+    {
+    "title": "Guess Country",
+    "description": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds flags.",
+    "mainImage": "/images/guessCountry.png",
+    "techStack": [
+      { "name": "CSS", "icon": "faCss" },
+      { "name": "JavaScript", "icon": "faJs" },
+      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "React", "icon": "faReact" }
+    ],
+    "links": {
+      "deployment": "http://delphym-mania-chc-24-birds-collection.devacademy.nz/",
+      "github": "https://github.com/manaia-roa-2024/guess-the-country"
+    }
+  }
+]

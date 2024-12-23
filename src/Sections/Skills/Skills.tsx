@@ -41,6 +41,10 @@ export default function Skills() {
           <Box className="skills-tiles" gap="10px">
             <SkillTile icon={faHtml5} text="HTML" />
             <SkillTile icon={faCss} text="CSS" />
+            <SkillTile
+              icon={'/images/tailwind-css-2.svg'}
+              text="Tailwind CSS"
+            />
             <SkillTile icon={faJs} text="JavaScript" />
             <SkillTile
               icon={'/images/typescript-svgrepo-com.svg'}
