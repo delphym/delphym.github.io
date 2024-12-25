@@ -10,7 +10,7 @@ import SkillTile from '../Skills/SkillTile'
 import projectData from '../../data/projects.json'
 
 // Map string keys from JSON to actual Font Awesome icon objects:
-const iconsMap: { [key: string]: any } = {
+const iconsMap: { [key: string]: unknown } = {
   faCss,
   faJs,
   faNodeJs,
