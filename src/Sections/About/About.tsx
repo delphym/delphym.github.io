@@ -13,7 +13,7 @@ export default function About() {
       </div>
       <div className="content-box content-width about-box section-box">
         <div className="profile-img-box">
-          <img src="/images/DM-profile.png" alt="Daniel Mladek" />
+          <img src="images/DM-profile.png" alt="Daniel Mladek" />
         </div>
         <VertBox>
           <h3>Daniel Mladek</h3>

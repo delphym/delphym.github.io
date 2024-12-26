@@ -41,27 +41,24 @@ export default function Skills() {
           <Box className="skills-tiles" gap="10px">
             <SkillTile icon={faHtml5} text="HTML" />
             <SkillTile icon={faCss} text="CSS" />
-            <SkillTile
-              icon={'/images/tailwind-css-2.svg'}
-              text="Tailwind CSS"
-            />
+            <SkillTile icon={'images/tailwind-css-2.svg'} text="Tailwind CSS" />
             <SkillTile icon={faJs} text="JavaScript" />
             <SkillTile
-              icon={'/images/typescript-svgrepo-com.svg'}
+              icon={'images/typescript-svgrepo-com.svg'}
               text="TypeScript"
             />
             <SkillTile icon={faReact} text="React" />
             <SkillTile icon={faNodeJs} text="NodeJS" />
             <SkillTile icon={faJava} text="Java" />
-            <SkillTile icon={'/images/spring-3.svg'} text="Spring" />
+            <SkillTile icon={'images/spring-3.svg'} text="Spring" />
             <SkillTile icon={faDatabase} text="SQL" />
-            <SkillTile icon={'/images/git-icon.svg'} text="Git" />
+            <SkillTile icon={'images/git-icon.svg'} text="Git" />
             <SkillTile icon={faGithub} text="GitHub" />
             <SkillTile icon={faGitlab} text="GitLab" />
             <SkillTile icon={faJenkins} text="Jenkins" />
             <SkillTile icon={faDocker} text="Docker" />
             <SkillTile icon={faAws} text="AWS" />
-            <SkillTile icon={'/images/azure-1.svg'} text="Azure" />
+            <SkillTile icon={'images/azure-1.svg'} text="Azure" />
             <SkillTile icon={faApple} text="macOS" />
             <SkillTile icon={faWindows} text="Windows OS" />
             <SkillTile icon={faLinux} text="Linux OS" />

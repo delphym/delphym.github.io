@@ -7,12 +7,12 @@
       "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/TrolleGuy.png"
     ],
     "techStack": [
-      { "name": "Tailwind CSS", "icon": "/images/tailwind-css-2.svg" },
+      { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
       { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" },
       { "name": "SQLite", "icon": "faDatabase" },
-      { "name": "Auth0", "icon": "/images/auth0.svg" }
+      { "name": "Auth0", "icon": "images/auth0.svg" }
     ],
     "links": {
       "deployment": "https://stellar-share-mania-roa-24.pushed.nz/",
@@ -22,11 +22,11 @@
   {
     "title": "Bird Collection",
     "description": "A Web application keeping a detailed list of birds observations.",
-    "mainImage": "/images/birdCollection.jpg",
+    "mainImage": "images/birdCollection.jpg",
     "techStack": [
-      { "name": "Tailwind CSS", "icon": "/images/tailwind-css-2.svg" },
+      { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
       { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" },
       { "name": "SQLite", "icon": "faDatabase" }
     ],
@@ -38,11 +38,11 @@
   {
     "title": "Dog Dating App",
     "description": "FullStack single-page application for canine connections.",
-    "mainImage": "/images/dogApp.png",
+    "mainImage": "images/dogApp.png",
     "techStack": [
       { "name": "CSS", "icon": "faCss" },
       { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
     ],
     "links": {
@@ -53,11 +53,11 @@
     {
     "title": "Guess Country",
     "description": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds flags.",
-    "mainImage": "/images/guessCountry.png",
+    "mainImage": "images/guessCountry.png",
     "techStack": [
       { "name": "CSS", "icon": "faCss" },
       { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "/images/typescript-svgrepo-com.svg" },
+      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
     ],
     "links": {

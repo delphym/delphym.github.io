@@ -5,7 +5,7 @@ export default function CVBox() {
     <a href="/documents/DM-resume.pdf" target="_blank">
       <Box className="cv-box items-center" gap="10px">
         <img
-          src="/images/curriculum-resume-svgrepo-com.svg"
+          src="images/curriculum-resume-svgrepo-com.svg"
           width={'20px'}
           alt="Curriculum Resume Icon"
         />
