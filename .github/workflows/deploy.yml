@@ -9,10 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # <--- Here we need to add permissions: contents: write
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,17 +22,23 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: npm run build #  → this calls `vite build --mode production` (as defined in package.json)
 
       - name: Upload dist as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages-artifact
-          path: dist
+          path: '.dist'
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write # <--- Here we need to add permissions: pages: write to directly deploy to the Pages environment.
+      id-token: write
+
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages # Publish to this default gh-pages branch
