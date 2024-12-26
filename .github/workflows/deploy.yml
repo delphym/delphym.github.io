@@ -25,9 +25,8 @@ jobs:
         run: npm run build #  → this calls `vite build --mode production` (as defined in package.json)
 
       - name: Upload dist as artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages-artifact
           path: './dist'
 
   deploy:
@@ -39,6 +38,6 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
