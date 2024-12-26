@@ -14,6 +14,7 @@
     "watch:css": "postcss ./src/styles/main.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.31.3",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "react": "^18.3.1",
