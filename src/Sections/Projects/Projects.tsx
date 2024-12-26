@@ -10,7 +10,9 @@ import SkillTile from '../Skills/SkillTile'
 import projectData from '../../data/projects.json'
 
 // Map string keys from JSON to actual Font Awesome icon objects:
-const iconsMap: { [key: string]: unknown } = {
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+
+const iconsMap: { [key: string]: IconDefinition } = {
   faCss,
   faJs,
   faNodeJs,
