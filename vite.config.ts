@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
 
   const base = isDev
     ? '/~delphym/REACT/delphym.github.io/' // Dev base
-    : '/delphym.github.io/' // Prod base (GitHub pages)
+    : '/' // Prod base (GitHub pages)
   console.log('base:', base)
 
   return {
