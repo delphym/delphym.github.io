@@ -65,7 +65,7 @@
       { "name": "React", "icon": "faReact" }
     ],
     "links": {
-      "deployment": "http://delphym-mania-chc-24-birds-collection.devacademy.nz/",
+      "deployment": "http://the-a-team-guess-the-country.devacademy.nz/",
       "github": "https://github.com/manaia-roa-2024/guess-the-country"
     }
   },
@@ -81,8 +81,24 @@
       { "name": "React", "icon": "faReact" }
     ],
     "links": {
-      "deployment": "N/A",
-      "github": "https://github.com/manaia-roa-2024/group1"
+      "deployment": "http://delphym-mania-chc-24-pokemons.devacademy.nz/",
+      "github": "https://github.com/manaia-roa-2024/query-em-all"
+    }
+  },
+  {
+    "title": "Collection of simple API Apps",
+    "description": "A site that pulls data from a number of public APIs",
+    "development": "This simple site is one of the first plays with consuming clientside APIs. I created that of my study at Dev Academy Aotearoa. It is a simple app that pulls information from publicly available APIs to practice querying in React and Typescript, and displays info on each one.",
+    "mainImage": "images/APICalls.jpg",
+    "techStack": [
+      { "name": "CSS", "icon": "faCss" },
+      { "name": "JavaScript", "icon": "faJs" },
+      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
+      { "name": "React", "icon": "faReact" }
+    ],
+    "links": {
+      "deployment": "http://delphym-mania-chc-24-consuming-client-apis.devacademy.nz/",
+      "github": "https://github.com/manaia-roa-2024/consuming-clientside-apis"
     }
   }
 ]
