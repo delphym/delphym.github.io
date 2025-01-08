@@ -30,6 +30,7 @@
       { "name": "JavaScript", "icon": "faJs" },
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" },
+      { "name": "React Forms", "icon": "images/react-forms.png" },
       { "name": "SQLite", "icon": "faDatabase" }
     ],
     "links": {
