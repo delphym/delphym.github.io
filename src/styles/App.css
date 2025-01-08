@@ -39,7 +39,7 @@ section {
 
 #root {
   color: white;
-  background-color: rgb(29, 49, 85);
+  background-color: #02495a;
   overflow: hidden;
   padding-bottom: 100px;
 }
@@ -184,4 +184,50 @@ a.link {
 
 .nav-text {
   font-size: 22px;
+}
+
+#Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#Projects > div:first-child {
+  width: 80%;
+  max-width: 1200px;
+}
+
+#Projects > div:first-child > h2 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.projects-content {
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-sizing: border-box;
+  /* background-color: rgb(50, 84, 146); */
+  background-color: #077a97;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item-top-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 20px;
 }

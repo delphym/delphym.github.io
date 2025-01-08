@@ -10,8 +10,8 @@
     "build:dev-full": "tsc -b && vite build --outDir dist --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:css": "postcss ./src/styles/input.css -o ./src/styles/output.css",
-    "watch:css": "postcss ./src/styles/main.css -o ./src/styles/output.css --watch"
+    "build:css": "tailwindcss -i ./src/styles/main.css -o ./src/styles/output.css",
+    "watch:css": "tailwind -i ./src/styles/main.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.31.3",
