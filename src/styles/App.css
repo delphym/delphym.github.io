@@ -231,3 +231,42 @@ a.link {
   gap: 40px;
   margin-bottom: 20px;
 }
+
+.project-item-header {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.project-item-tech-stack {
+  margin-bottom: 20px;
+}
+
+.project-item-tech-stack h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.tech-stack-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-item-links {
+  margin-bottom: 20px;
+}
+
+.project-item-links h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.project-divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-color: #fff;
+}

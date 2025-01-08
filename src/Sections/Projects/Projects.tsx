@@ -31,139 +31,124 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div key={index} className="project-item">
             <div className="project-item-top-row">
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  gap: '40px',
-                  marginBottom: '20px',
-                }}
-              >
-                {/* LEFT COLUMN (60% width) */}
+              <div className="project-item-header">
                 <div
                   style={{
-                    flex: '0 0 60%',
                     display: 'flex',
-                    flexDirection: 'column',
-                    gap: '20px',
+                    flexDirection: 'row',
+                    gap: '40px',
+                    marginBottom: '20px',
                   }}
                 >
-                  <h1
+                  {/* LEFT COLUMN (60% width) */}
+                  <div
                     style={{
-                      fontSize: '50px',
-                      fontWeight: 'bold',
-                      margin: 0,
+                      flex: '0 0 60%',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '20px',
                     }}
                   >
-                    {project.title}
-                  </h1>
-
-                  {/* Description */}
-                  <div>
-                    <p
+                    <h1
                       style={{
-                        fontSize: '17px',
-                        lineHeight: '1.5',
-                        margin: '0 0 10px 0',
-                      }}
-                    >
-                      {project.description}
-                    </p>
-                  </div>
-
-                  {/* Development */}
-                  <div>
-                    <h3
-                      style={{
-                        fontSize: '25px',
+                        fontSize: '50px',
                         fontWeight: 'bold',
-                        margin: '0 0 10px 0',
-                      }}
-                    >
-                      Development
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: '17px',
-                        lineHeight: '1.5',
                         margin: 0,
                       }}
                     >
-                      This project is built using both front-end and back-end
-                      technologies.
-                      {/* Here’s a brief overview of the approach: */}
-                    </p>
+                      {project.title}
+                    </h1>
+
+                    {/* Description */}
+                    <div>
+                      <p
+                        style={{
+                          fontSize: '17px',
+                          lineHeight: '1.5',
+                          margin: '0 0 10px 0',
+                        }}
+                      >
+                        {project.description}
+                      </p>
+                    </div>
+
+                    {/* Development */}
+                    <div>
+                      <h3
+                        style={{
+                          fontSize: '25px',
+                          fontWeight: 'bold',
+                          margin: '0 0 10px 0',
+                        }}
+                      >
+                        Development
+                      </h3>
+                      <p
+                        style={{
+                          fontSize: '17px',
+                          lineHeight: '1.5',
+                          margin: 0,
+                        }}
+                      >
+                        This project is built using both front-end and back-end
+                        technologies.
+                        {/* Here’s a brief overview of the approach: */}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* RIGHT COLUMN (40% width) - MAIN IMAGE */}
+                  <div style={{ flex: '0 0 35%' }}>
+                    {project.mainImage && (
+                      <div
+                        style={{
+                          marginBottom: '10px',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '5px',
+                        }}
+                      >
+                        <p></p>
+                        <img
+                          src={project.mainImage}
+                          alt={project.title}
+                          style={{ width: '100%', objectFit: 'contain' }}
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
+              </div>
+            </div>
 
-                {/* RIGHT COLUMN (40% width) - MAIN IMAGE */}
-                <div style={{ flex: '0 0 35%' }}>
-                  {project.mainImage && (
-                    <div
-                      style={{
-                        marginBottom: '10px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '5px',
-                      }}
-                    >
-                      <p></p>
-                      <img
-                        src={project.mainImage}
-                        alt={project.title}
-                        style={{ width: '100%', objectFit: 'contain' }}
+            <div className="project-item-tech-stack">
+              <h3>Tech Stack</h3>
+              <div className="tech-stack-content">
+                <div
+                  style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '10px',
+                  }}
+                >
+                  {project.techStack?.map((tech, i) => {
+                    const icon =
+                      iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
+                    return (
+                      <SkillTile
+                        key={i}
+                        icon={icon}
+                        text={tech.name}
+                        // inline styling if you want
                       />
-                    </div>
-                  )}
+                    )
+                  })}
                 </div>
               </div>
             </div>
 
-            {/* -- TECH STACK -- */}
-            <div style={{ marginBottom: '20px' }}>
-              <h3
-                style={{
-                  fontSize: '25px',
-                  fontWeight: 'bold',
-                  margin: '0 0 10px 0',
-                }}
-              >
-                Tech Stack
-              </h3>
-
-              <div
-                style={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  gap: '10px',
-                }}
-              >
-                {project.techStack?.map((tech, i) => {
-                  const icon =
-                    iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
-                  return (
-                    <SkillTile
-                      key={i}
-                      icon={icon}
-                      text={tech.name}
-                      // inline styling if you want
-                    />
-                  )
-                })}
-              </div>
-            </div>
-
-            {/* -- LINKS -- */}
-            <div style={{ marginBottom: '20px' }}>
-              <h3
-                style={{
-                  fontSize: '25px',
-                  fontWeight: 'bold',
-                  margin: '0 0 10px 0',
-                }}
-              >
-                Links
-              </h3>
+            <div className="project-item-links">
+              <h3>Links</h3>
               <ul
                 style={{
                   margin: 0,
@@ -204,15 +189,8 @@ const Projects = () => {
               </ul>
             </div>
 
-            {/* -- DIVIDER (except for last item) -- */}
             {index < projectData.length - 1 && (
-              <hr
-                style={{
-                  marginTop: '40px',
-                  marginBottom: '40px',
-                  borderColor: '#fff',
-                }}
-              />
+              <hr className="project-divider" />
             )}
           </div>
         ))}
