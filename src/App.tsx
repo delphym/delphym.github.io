@@ -6,6 +6,7 @@ import About from './Sections/About/About'
 import Contact from './Sections/Contact/Contact'
 import Intro from './Sections/Intro/Intro'
 import Projects from './Sections/Projects/Projects'
+// import Projects from './Sections/Projects/ProjectsDynamic'
 import Skills from './Sections/Skills/Skills'
 
 function App() {
