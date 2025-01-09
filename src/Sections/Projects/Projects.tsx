@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   faCss,
   faJs,
@@ -32,88 +33,32 @@ const Projects = () => {
           <div key={index} className="project-item">
             <div className="project-item-top-row">
               <div className="project-item-header">
-                <div
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    gap: '40px',
-                    marginBottom: '20px',
-                  }}
-                >
+                <div className="project-item-header-content">
                   {/* LEFT COLUMN (60% width) */}
-                  <div
-                    style={{
-                      flex: '0 0 60%',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '20px',
-                    }}
-                  >
-                    <h1
-                      style={{
-                        fontSize: '50px',
-                        fontWeight: 'bold',
-                        margin: 0,
-                      }}
-                    >
-                      {project.title}
-                    </h1>
-
+                  <div className="project-item-left-column">
+                    <h1>{project.title}</h1>
                     {/* Description */}
                     <div>
-                      <p
-                        style={{
-                          fontSize: '17px',
-                          lineHeight: '1.5',
-                          margin: '0 0 10px 0',
-                        }}
-                      >
+                      <p className="project-item-left-column-content">
                         {project.description}
                       </p>
                     </div>
 
                     {/* Development */}
                     <div>
-                      <h3
-                        style={{
-                          fontSize: '25px',
-                          fontWeight: 'bold',
-                          margin: '0 0 10px 0',
-                        }}
-                      >
-                        Development
-                      </h3>
-                      <p
-                        style={{
-                          fontSize: '17px',
-                          lineHeight: '1.5',
-                          margin: 0,
-                        }}
-                      >
+                      <h3 className="project-item-tech-stack">Development</h3>
+                      <p className="project-item-left-column-content">
                         This project is built using both front-end and back-end
                         technologies.
-                        {/* Here’s a brief overview of the approach: */}
                       </p>
                     </div>
                   </div>
-
-                  {/* RIGHT COLUMN (40% width) - MAIN IMAGE */}
-                  <div style={{ flex: '0 0 35%' }}>
+                  {/* RIGHT COLUMN (35% width) - MAIN IMAGE */}
+                  <div className="project-item-right-column">
                     {project.mainImage && (
-                      <div
-                        style={{
-                          marginBottom: '10px',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          gap: '5px',
-                        }}
-                      >
+                      <div className="project-item-main-image">
                         <p></p>
-                        <img
-                          src={project.mainImage}
-                          alt={project.title}
-                          style={{ width: '100%', objectFit: 'contain' }}
-                        />
+                        <img src={project.mainImage} alt={project.title} />
                       </div>
                     )}
                   </div>
@@ -124,63 +69,34 @@ const Projects = () => {
             <div className="project-item-tech-stack">
               <h3>Tech Stack</h3>
               <div className="tech-stack-content">
-                <div
-                  style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: '10px',
-                  }}
-                >
-                  {project.techStack?.map((tech, i) => {
-                    const icon =
-                      iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
-                    return (
-                      <SkillTile
-                        key={i}
-                        icon={icon}
-                        text={tech.name}
-                        // inline styling if you want
-                      />
-                    )
-                  })}
-                </div>
+                {project.techStack?.map((tech, i) => {
+                  const icon =
+                    iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
+                  return <SkillTile key={i} icon={icon} text={tech.name} />
+                })}
               </div>
             </div>
 
             <div className="project-item-links">
               <h3>Links</h3>
-              <ul
-                style={{
-                  margin: 0,
-                  paddingInlineStart: '20px',
-                  listStyle: 'disc',
-                }}
-              >
+              <ul>
                 {project.links?.deployment && (
-                  <li style={{ marginBottom: '10px', fontSize: '17px' }}>
+                  <li>
                     <a
                       target="_blank"
                       href={project.links.deployment}
                       rel="noreferrer"
-                      style={{
-                        color: 'rgb(241, 114, 110)',
-                        textDecoration: 'underline',
-                      }}
                     >
                       Deployment
                     </a>
                   </li>
                 )}
                 {project.links?.github && (
-                  <li style={{ marginBottom: '10px', fontSize: '17px' }}>
+                  <li>
                     <a
                       target="_blank"
                       href={project.links.github}
                       rel="noreferrer"
-                      style={{
-                        color: 'rgb(241, 114, 110)',
-                        textDecoration: 'underline',
-                      }}
                     >
                       GitHub
                     </a>
