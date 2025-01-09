@@ -108,7 +108,8 @@ nav {
   height: auto;
 }
 
-#skills {
+.skills {
+  @apply flex flex-col items-center gap-5;
 }
 
 .skills-tiles {
@@ -121,6 +122,18 @@ nav {
   border-radius: 10px;
   border: 2px solid rgb(19, 40, 80);
   background-color: rgb(50, 84, 146);
+}
+
+.skill-brick-icon {
+  font-size: 20px;
+}
+
+.skill-brick-img {
+  width: 20px;
+}
+
+.skill-brick-text {
+  width: max-content;
 }
 
 .proj-con {

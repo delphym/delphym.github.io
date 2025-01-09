@@ -24,8 +24,9 @@ export default function Skills() {
     <VertBox
       tag="section"
       id="Skills"
-      className="flex flex-col items-center"
-      gap="20px"
+      className="skills"
+      // className="flex flex-col items-center"
+      // gap="20px"
     >
       <div className="content-width">
         <h2 id="About">Skills</h2>
