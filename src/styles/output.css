@@ -886,8 +886,8 @@ a.link {
 }
 
 .project-item-left-column-content {
-  fontsize: '17px';
-  lineheight: '1.5';
+  font-size: '17px';
+  line-height: '1.5';
   margin: '0 0 10px 0';
 }
 
