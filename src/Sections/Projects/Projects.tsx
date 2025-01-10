@@ -23,9 +23,11 @@ const iconsMap: { [key: string]: IconDefinition } = {
 }
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null)
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projectData)[0] | null
+  >(null)
 
-  const handleCardClick = (project) => {
+  const handleCardClick = (project: (typeof projectData)[0]) => {
     setSelectedProject(project)
   }
 
@@ -54,7 +56,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {selectedProject && (
+      {selectedProject !== null && (
         <ProjectCardFloating
           project={selectedProject}
           onClose={closeLightbox}

@@ -1,3 +1,6 @@
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
+import SkillTile from '../Skills/SkillTile'
+
 interface ProjectCardProps {
   project: {
     title: string

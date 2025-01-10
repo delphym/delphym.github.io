@@ -1,4 +1,6 @@
 import { XMarkIcon } from '@heroicons/react/24/solid'
+import SkillTile from '../Skills/SkillTile'
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
 interface ProjectCardFloatingProps {
   project: {
     title: string
