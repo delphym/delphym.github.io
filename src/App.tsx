@@ -1,5 +1,5 @@
-import Navigation from './Components/Navigation/Navigation'
 import './styles/output.css'
+import Navigation from './Components/Navigation/Navigation'
 import About from './Sections/About/About'
 import Contact from './Sections/Contact/Contact'
 import Intro from './Sections/Intro/Intro'

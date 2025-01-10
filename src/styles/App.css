@@ -101,6 +101,16 @@ nav {
   width: 180px;
   height: auto;
   flex: 0 0 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.profile-img-box:hover {
+  box-shadow: 0 4px 20px rgba(241, 114, 110, 0.8);
+  transform: scale(1.1);
 }
 
 .profile-img-box > img {
@@ -318,10 +328,26 @@ a.link {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+
+  border-radius: 5%;
+
+  margin-top: 1rem;
+  margin-left: auto;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.project-item-main-image:hover {
+  box-shadow: 0 14px 18px rgba(241, 114, 110, 0.8);
+  transform: scale(1.05);
 }
 
 .project-item-main-image img {
   width: 100%;
+  border-radius: 5%;
   object-fit: contain;
 }
 
