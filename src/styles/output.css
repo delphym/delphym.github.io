@@ -1009,9 +1009,10 @@ a.link {
 }
 
 .project-divider {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border-color: #fff;
+  margin: -30px -10px;
+  /* Adjust the margin to create a gap between project-item elements */
+  border: none;
+  border-top: 1px solid #fff;
 }
 
 @media only screen and (max-width: 1200px){
