@@ -2,11 +2,9 @@
   {
     "title": "Stellar Share",
     "description": "Community sharing app with a sci-fi theme",
-    "development": "This app was created in a group of 6 developers as our final group project for Dev Academy Aotearoa. It is a community item sharing / borrowing app with a fun sci-fi theme.",
-    "mainImage": "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/StelarShare.webp",
-    "additionalImages": [
-      "https://stellar-share-mania-roa-24.pushed.nz/images/Homepage/TrolleGuy.png"
-    ],
+    "development": "This app was created in a group of 6 developers as our final group project for Dev Academy Aotearoa. It is a community item sharing / borrowing app with a fun sci-fi theme and focus on the social aspects of the community.",
+    "mainImage": "images/StelarShare.webp",
+    "additionalImages": [ "images/TrolleGuy.png" ],
     "techStack": [
       { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
       { "name": "JavaScript", "icon": "faJs" },
@@ -14,6 +12,17 @@
       { "name": "React", "icon": "faReact" },
       { "name": "SQLite", "icon": "faDatabase" },
       { "name": "Auth0", "icon": "images/auth0.svg" }
+    ],
+    "objectives": [
+      "Project management and work coordination in a team of six",
+      "Fundamentals of Tailwind CSS and custom classes",
+      "CSS animations and transitions and other interactive effects",
+      "Using Auth0 as authentication provider",
+      "Protect parts of apps based on user roles",
+      "Managing Git workflows and pull-request reviews",
+      "Dokku deployment of full-stack applications",
+      "Practice with React and TypeScript",
+      "Conflict resolution and team communication"
     ],
     "links": {
       "deployment": "https://stellar-share-mania-roa-24.pushed.nz/",
@@ -23,7 +32,7 @@
   {
     "title": "Bird Collection",
     "description": "A Web application keeping a detailed list of birds observations.",
-    "development": "",
+    "development": "A two-person full-stack project. It contains node modules, SQLite database to store the bird data, routes, API requests, and React component using React Query. The app is a bird collection app that allows users to keep a detailed list of bird observations.",
     "mainImage": "images/birdCollection.jpg",
     "techStack": [
       { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
@@ -32,6 +41,13 @@
       { "name": "React", "icon": "faReact" },
       { "name": "React Forms", "icon": "images/react-forms.png" },
       { "name": "SQLite", "icon": "faDatabase" }
+    ],
+    "objectives": [
+      "Implementing a full-stack application using React, TypeScript, and SQLite",
+      "Learning about React Query, a library for managing, caching, and updating asynchronous data in React applications",
+      "Creating a responsive and user-friendly interface",
+      "Learning about error handling and error boundaries",
+      "Mastering React forms, hooks and context management with React Query"
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-birds-collection.devacademy.nz/",
@@ -49,6 +65,12 @@
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
     ],
+    "objectives": [
+      "Learning about React, TypeScript, and the Context API",
+      "Implementing a full-stack application using React, TypeScript, and a backend server",
+      "Learning about Knex.js – SQL query builder, Migration API (seedings, migrations)",
+      "Vitest – a test library for React"
+    ],
     "links": {
       "deployment": "N/A",
       "github": "https://github.com/manaia-roa-2024/group1"
@@ -57,7 +79,7 @@
     {
     "title": "Guess Country",
     "description": "A flag / country guessing game.",
-    "development": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds flags (plus some extra obscure ones).",
+    "development": "This is a front end single page application. This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds countries and territories.",
     "mainImage": "images/guessCountry.png",
     "techStack": [
       { "name": "CSS", "icon": "faCss" },
@@ -65,14 +87,19 @@
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
     ],
+    "objectives": [
+      "Learning about React, TypeScript",
+      "Implementing a front-end application using React, TypeScript, and client-side APIs",
+      "Learning about react-router-dom, expres and vite servers, vitest, and eslint"
+    ],
     "links": {
       "deployment": "http://the-a-team-guess-the-country.devacademy.nz/",
       "github": "https://github.com/manaia-roa-2024/guess-the-country"
     }
   },
   {
-    "title": "PokéAPI App",
-    "description": "Simple site that pulls pokemon info from the public Poke API",
+    "title": "Query 'em All App",
+    "description": "Simple site that pulls pokemon info from the public Poké API",
     "development": "This app was one of the first I built as a part of my study at Dev Academy Aotearoa. It is a simple app that pulls information on all pokemon from the publicly available poke API, and displays info on each one.",
     "mainImage": "images/poki-go.jpg",
     "techStack": [
@@ -80,6 +107,12 @@
       { "name": "JavaScript", "icon": "faJs" },
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
+    ],
+    "objectives": [
+      "Learning about React, TypeScript",
+      "Implementing a front-end application using React, TypeScript, and client-side APIs",
+      "Learning about React Query, and how to consume public APIs",
+      "Learning about loading states and error handling"
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-pokemons.devacademy.nz/",
@@ -96,6 +129,12 @@
       { "name": "JavaScript", "icon": "faJs" },
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
+    ],
+    "objectives": [
+      "Learning about React, TypeScript",
+      "Implementing a front-end application using React, TypeScript, and client-side APIs",
+      "Learning about React Query, and how to consume public APIs",
+      "Learning about loading states and error handling"
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-consuming-client-apis.devacademy.nz/",

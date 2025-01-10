@@ -31,18 +31,18 @@ p {
 .nav-left {
   flex: 1;
   padding-left: 30px;
-  z-index: 1000; /* Add this line to ensure the nav bar stays on top */
+  z-index: 1000; /* To ensure the nav bar stays on top */
 }
 
 .nav-center {
   flex: 0 1 0;
-  z-index: 1000; /* Add this line to ensure the nav bar stays on top */
+  z-index: 1000; /* To ensure the nav bar stays on top */
 }
 
 .nav-right {
   flex: 1;
   padding-right: 30px;
-  z-index: 1000; /* Add this line to ensure the nav bar stays on top */
+  z-index: 1000; /* To ensure the nav bar stays on top */
 }
 
 section {
@@ -62,8 +62,10 @@ nav {
   left: 0;
   position: fixed;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 999; /* Add this line to ensure the nav bar stays on top */
+  color: rgb(255, 218, 225);
+
+  background-color: rgba(29, 28, 78, 0.607);
+  z-index: 999; /* To ensure the nav bar stays on top */
 }
 
 .nav-tab {

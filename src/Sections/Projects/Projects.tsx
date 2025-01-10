@@ -49,8 +49,7 @@ const Projects = () => {
                       <div>
                         <h3 className="project-item-tech-stack">Development</h3>
                         <p className="project-item-left-column-content">
-                          This project is built using both front-end and
-                          back-end technologies.
+                          {project.development}
                         </p>
                       </div>
                     </div>
