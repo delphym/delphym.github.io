@@ -1,9 +1,18 @@
 h1 {
   font-size: 80px !important;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
 }
 
 h2 {
   font-size: 30px !important;
+  text-shadow: 0 0 10px rgba(241, 114, 110, 0.8),
+    0 0 20px rgba(241, 114, 110, 0.8), 0 0 30px rgba(241, 114, 110, 0.8);
 }
 
 h3 {
@@ -245,6 +254,23 @@ a.link {
 .project-item {
   display: flex;
   flex-direction: column;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-item:hover {
+  background-color: #055f6e;
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-item-top-row,
+.project-item-tech-stack,
+.project-item-links {
+  margin: 20px 0;
 }
 .project-item-top-row {
   display: flex;
@@ -330,9 +356,7 @@ a.link {
   gap: 5px;
   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
-
   border-radius: 5%;
-
   margin-top: 1rem;
   margin-left: auto;
   transition-property: transform;
