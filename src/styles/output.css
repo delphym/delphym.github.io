@@ -646,15 +646,21 @@ p {
 .nav-left {
   flex: 1;
   padding-left: 30px;
+  z-index: 1000;
+  /* Add this line to ensure the nav bar stays on top */
 }
 
 .nav-center {
   flex: 0 1 0;
+  z-index: 1000;
+  /* Add this line to ensure the nav bar stays on top */
 }
 
 .nav-right {
   flex: 1;
   padding-right: 30px;
+  z-index: 1000;
+  /* Add this line to ensure the nav bar stays on top */
 }
 
 section {
@@ -675,6 +681,8 @@ nav {
   position: fixed;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  /* Add this line to ensure the nav bar stays on top */
 }
 
 .nav-tab {
