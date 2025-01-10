@@ -57,10 +57,10 @@
   {
     "title": "Dog Dating App",
     "description": "FullStack single-page application for canine connections.",
-    "development": "",
+    "development": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a simple, single-page application that allows users to create a profile for their dog, and connect with other dog owners in their area.",
     "mainImage": "images/dogApp.png",
     "techStack": [
-      { "name": "CSS", "icon": "faCss" },
+      { "name": "Sass CSS", "icon": "faCss" },
       { "name": "JavaScript", "icon": "faJs" },
       { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
       { "name": "React", "icon": "faReact" }
@@ -69,7 +69,8 @@
       "Learning about React, TypeScript, and the Context API",
       "Implementing a full-stack application using React, TypeScript, and a backend server",
       "Learning about Knex.js – SQL query builder, Migration API (seedings, migrations)",
-      "Vitest – a test library for React"
+      "Vitest – a test library for React",
+      "Learning about CSS preprocessor like Sass"
     ],
     "links": {
       "deployment": "N/A",
