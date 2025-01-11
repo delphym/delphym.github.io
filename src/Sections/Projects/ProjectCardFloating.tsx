@@ -27,10 +27,13 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
         the floating card (optional approach).
       */}
       <XMarkIcon
-        className="w-16 cursor-pointer text-gray-500 hover:text-gray-800 close-btn left-4"
+        className="w-16 cursor-pointer text-gray-500 hover:text-green-300 close-btn left-4"
         onClick={onClose}
       />
-      <button onClick={onClose} className="close-btn">
+      <button
+        onClick={onClose}
+        className="w-16 cursor-pointer text-gray-500 hover:text-green-300 close-btn"
+      >
         Close
       </button>
 
