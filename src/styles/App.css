@@ -418,57 +418,52 @@ a.link {
   left: 0;
   width: 100vw;
   height: 100vh;
-
-  /*
-    Semi-transparent background
-    that also allows for the blur effect
-  */
-  background-color: rgba(2, 73, 90, 0.6); /* #02495a at ~60% opacity */
-
-  /* For the blur effect behind the overlay content */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-
-  /*
-    Center the floating card (flex approach)
-  */
+  /* Center the floating card (flex approach) */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999; /* ensure it is on top of everything else */
+
+  /* Semi-transparent background + blur effect behind the card */
+  background-color: rgba(2, 73, 90, 0.6); /* #02495a at ~60% opacity */
+  /* For the blur effect behind the overlay content */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* Initially hidden */
+  opacity: 0;
+  visibility: hidden;
+  /* We'll fade in the overlay over 0.3s */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.project-card-floating-overlay.open {
+  /* When .open is applied, show + fade in */
+  opacity: 1;
+  visibility: visible;
 }
 
 /* 2) The floating card itself */
 .project-card-floating {
-  /*
-    70–80% wide is a good range for moderate size
-    and less “in-your-face”
-  */
   width: 80%;
   max-width: 900px;
-
-  /*
-    A background color that’s slightly lighter than #02495a
-    or #077A97
-  */
-  background-color: rgba(7, 122, 151, 0.95);
-  /*
-    Or you can try #055f6e with a slight alpha
-    background-color: rgba(5, 95, 110, 0.9);
-  */
-
-  color: #fff; /* white text for contrast */
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-
-  /* If your content is longer than the screen height,
-     let it scroll within the card.
-  */
   max-height: 80vh;
   overflow-y: auto;
-}
+  padding: 2rem;
 
+  background-color: rgba(7, 122, 151, 0.95); /* #077A97 at 95% opacity */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+  /* Subtle scale transform to start smaller, if you want that "zoom in" effect */
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  position: relative; /* if needed an absolutely-positioned close button */
+}
+.project-card-floating-overlay.open .project-card-floating {
+  /* Scale back up to 100% */
+  transform: scale(1);
+}
 /*
    3) Additional styling for links, text, etc.
    Adjust to taste
@@ -491,6 +486,7 @@ a.link {
 .project-card-floating .close-btn {
   position: absolute;
   top: 1rem;
+  /* bottom: 1rem; */
   right: 1rem;
   cursor: pointer;
   background: transparent;

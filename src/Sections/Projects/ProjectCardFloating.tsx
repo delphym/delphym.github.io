@@ -2,29 +2,26 @@ import { XMarkIcon } from '@heroicons/react/24/solid'
 import SkillTile from '../Skills/SkillTile'
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
 interface ProjectCardFloatingProps {
-  project: {
-    title: string
-    description: string
-    development: string
-    mainImage: string
-    techStack: { name: string; icon: IconDefinition | string }[]
-    objectives: string[]
-    links: {
-      deployment?: string
-      github?: string
-    }
-  }
-  onClose: () => void
+  project: typeof import('../../data/projects.json')[0] | null
   iconsMap: Record<string, IconDefinition | string>
+  isOpen: boolean
+  onClose: () => void
 }
 
 const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
   project,
-  onClose,
   iconsMap,
+  isOpen,
+  onClose,
 }) => {
+  if (!project) return null
+
   return (
-    <div className="project-card-floating-overlay" onClick={onClose}>
+    <div
+      // Toggle CSS class .open if isOpen === true
+      className={`project-card-floating-overlay ${isOpen ? 'open' : ''}`}
+      onClick={onClose} // click outside => close
+    >
       {/*
         We use onClick at the overlay level to close when user clicks outside
         the floating card (optional approach).
@@ -76,7 +73,7 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
                 <a
                   target="_blank"
                   href={project.links.deployment}
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Deployment
                 </a>
@@ -84,7 +81,11 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
             )}
             {project.links?.github && (
               <li>
-                <a target="_blank" href={project.links.github} rel="noreferrer">
+                <a
+                  target="_blank"
+                  href={project.links.github}
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </li>
