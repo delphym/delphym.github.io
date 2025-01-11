@@ -24,15 +24,30 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
   iconsMap,
 }) => {
   return (
-    <div className="lightbox">
+    <div className="project-card-floating-overlay" onClick={onClose}>
+      {/*
+        We use onClick at the overlay level to close when user clicks outside
+        the floating card (optional approach).
+      */}
+      <div
+        className="project-card-floating"
+        onClick={(e) => e.stopPropagation()}
+        /*
+           Stop propagation so that clicking inside the card
+           doesn't trigger the overlay’s onClick
+        */
+      >
+        {/* <div className="lightbox">
       <div className="lightbox-content">
         <XMarkIcon
           className="w-16 cursor-pointer text-gray-500 hover:text-gray-800"
           onClick={onClose}
+        /> */}
+        <XMarkIcon
+          className="w-16 cursor-pointer text-gray-500 hover:text-gray-800 close-btn left-4"
+          onClick={onClose}
         />
-
-        <button onClick={onClose}>Close</button>
-        <h1>{project.title}</h1>
+        <h2>{project.title}</h2>
         <p>{project.description}</p>
         <p>{project.development}</p>
         <div>
@@ -46,7 +61,7 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
           </div>
         </div>
         <div>
-          <h3>Objectives</h3>
+          <h3>What I learned</h3>
           <ul>
             {project.objectives.map((objective, i) => (
               <li key={i}>{objective}</li>
@@ -75,6 +90,9 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
               </li>
             )}
           </ul>
+          <button onClick={onClose} className="close-btn">
+            Close
+          </button>
         </div>
       </div>
     </div>
