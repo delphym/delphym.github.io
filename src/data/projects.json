@@ -1,10 +1,11 @@
 [
   {
+    "prjFolder": "StellarShare",
     "title": "Stellar Share",
     "description": "Community sharing app with a sci-fi theme",
     "development": "This app was created in a group of 6 developers as our final group project for Dev Academy Aotearoa. It is a community item sharing / borrowing app with a fun sci-fi theme and focus on the social aspects of the community.",
     "mainImage": "images/StelarShare.webp",
-    "additionalImages": [ "images/TrolleGuy.png" ],
+    "additionalImages": [ "images/TrolleGuy.png", "images/StellarShare-1.png", "images/StellarShare-2.png", "images/StellarShare-3.png", "images/StellarShare-4.png", "images/StellarShare-5.png" ],
     "techStack": [
       { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
       { "name": "JavaScript", "icon": "faJs" },
@@ -30,6 +31,7 @@
     }
   },
   {
+    "prjFolder": "BirdCollection",
     "title": "Bird Collection",
     "description": "A Web application keeping a detailed list of birds observations.",
     "development": "A two-person full-stack project. It contains node modules, SQLite database to store the bird data, routes, API requests, and React component using React Query. The app is a bird collection app that allows users to keep a detailed list of bird observations.",
@@ -55,6 +57,7 @@
     }
   },
   {
+    "prjFolder": "DogTinder",
     "title": "Dog Dating App",
     "description": "FullStack single-page application for canine connections.",
     "development": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a simple, single-page application that allows users to create a profile for their dog, and connect with other dog owners in their area.",
@@ -78,6 +81,7 @@
     }
   },
     {
+    "prjFolder": "GuessCountry",
     "title": "Guess Country",
     "description": "A flag / country guessing game.",
     "development": "This is a front end single page application. This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds countries and territories.",
@@ -99,6 +103,7 @@
     }
   },
   {
+    "prjFolder": "Pokies",
     "title": "Query 'em All App",
     "description": "Simple site that pulls pokemon info from the public Poké API",
     "development": "This app was one of the first I built as a part of my study at Dev Academy Aotearoa. It is a simple app that pulls information on all pokemon from the publicly available poke API, and displays info on each one.",
@@ -121,6 +126,7 @@
     }
   },
   {
+    "prjFolder": "APIs",
     "title": "Collection of simple API Apps",
     "description": "A site that pulls data from a number of public APIs",
     "development": "This simple site is one of the first plays with consuming clientside APIs. I created that of my study at Dev Academy Aotearoa. It is a simple app that pulls information from publicly available APIs to practice querying in React and Typescript, and displays info on each one.",

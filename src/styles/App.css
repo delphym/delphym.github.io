@@ -471,3 +471,33 @@ a.link {
   color: #fff;
   font-size: 1.5rem;
 }
+
+.image-ticker {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+.image-ticker-content {
+  display: inline-flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  /* width: 200%; */
+  animation: ticker var(--ticker-duration) linear infinite;
+}
+
+.image-ticker-content img {
+  height: 300px;
+  margin-right: 10px;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--move-dist));
+  }
+}

@@ -2,13 +2,7 @@ import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
 import SkillTile from '../Skills/SkillTile'
 
 interface ProjectCardProps {
-  project: {
-    title: string
-    description: string
-    development: string
-    mainImage: string
-    techStack: { name: string; icon: IconDefinition | string }[]
-  }
+  project: typeof import('../../data/projects.json')[0] | null
   onClick: () => void
   iconsMap: { [key: string]: IconDefinition | string }
 }
@@ -18,6 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   onClick,
   iconsMap,
 }) => {
+  if (!project) return null
   return (
     <div className="project-item" onClick={onClick}>
       <div className="project-item-top-row">
