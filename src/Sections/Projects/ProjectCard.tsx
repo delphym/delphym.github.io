@@ -13,6 +13,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   iconsMap,
 }) => {
   if (!project) return null
+  console.log('Project folder: ', project.prjFolder)
+  console.log('Project main image: ', project.mainImage)
+
   return (
     <div className="project-item" onClick={onClick}>
       <div className="project-item-top-row">
@@ -36,7 +39,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {project.mainImage && (
                 <div className="project-item-main-image">
                   <p></p>
-                  <img src={project.mainImage} alt={project.title} />
+                  <img
+                    src={`images/${project.prjFolder}/${project.mainImage}`}
+                    alt={project.title}
+                  />
                 </div>
               )}
             </div>

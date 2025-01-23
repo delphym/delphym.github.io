@@ -41,13 +41,16 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
   // Render 2 sets of images to create the infinite loop effect
   const imagesFirstSet = (
     <>
-      <img src={project.mainImage} alt={project.title} />
+      <img
+        src={`images/${project.prjFolder}/${project.mainImage}`}
+        alt={project.title}
+      />
       {project.additionalImages?.map((image, index) => {
         const isLast = index === project.additionalImages.length - 1
         return (
           <img
             key={`first-${index}`}
-            src={image}
+            src={`images/${project.prjFolder}/${image}`}
             alt={`${project.title} ${index}`}
             style={{ marginRight: isLast ? '150px' : '10px' }}
           />
@@ -57,11 +60,14 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
   )
   const imagesSecondSet = (
     <>
-      <img src={project.mainImage} alt={project.title} />
+      <img
+        src={`images/${project.prjFolder}/${project.mainImage}`}
+        alt={project.title}
+      />
       {project.additionalImages?.map((image, index) => (
         <img
           key={`second-${index}`}
-          src={image}
+          src={`images/${project.prjFolder}/${image}`}
           alt={`${project.title} ${index}`}
         />
       ))}
