@@ -134,6 +134,7 @@
     "description": "A site that pulls data from a number of public APIs",
     "development": "This simple site is one of the first plays with consuming clientside APIs. I created that of my study at Dev Academy Aotearoa. It is a simple app that pulls information from publicly available APIs to practice querying in React and Typescript, and displays info on each one.",
     "mainImage": "APICalls.jpg",
+    "additionalImages": [ "APICalls-1.png", "APICalls-2.png", "APICalls-3.png", "APICalls-4.png"],
     "techStack": [
       { "name": "CSS", "icon": "faCss" },
       { "name": "JavaScript", "icon": "faJs" },
