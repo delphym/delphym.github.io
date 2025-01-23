@@ -18,8 +18,6 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
   onClose,
 }) => {
   const [animationDuration, setAnimationDuration] = useState('20s')
-  const [tickerWidth, setTickerWidth] = useState('100%')
-  const [singleSetWidth, setSingleSetWidth] = useState(3570)
   const [totalWidth, setTotalWidth] = useState(0)
   const containerRef = React.useRef<HTMLDivElement | null>(null)
 
@@ -28,10 +26,6 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
       const imageCount = 1 + (project.additionalImages?.length ?? 0) // mainImage + additionalImages
       const duration = imageCount * 5 // 5 seconds per image
       setAnimationDuration(`${duration}s`)
-
-      const totalWidth = imageCount * 510 // 300px height + 10px margin
-      setTickerWidth(`${totalWidth}px`)
-      console.log('totalWidth: ', totalWidth)
 
       // Calculate dynamically width of the images
       if (!containerRef.current) return
@@ -110,24 +104,14 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
           <div
             ref={containerRef}
             className="image-ticker-content"
-            // {/* First set of images */}
-            // style={{ animationDuration, width: 2 * singleSetWidth }}
-            // style={{ animationDuration: animationDuration }}
-            style={{
-              '--move-dist': `${-totalWidth / 2}px`,
-              '--ticker-duration': animationDuration,
-            }}
+            style={
+              {
+                '--move-dist': `${-totalWidth / 2}px`,
+                '--ticker-duration': animationDuration,
+              } as React.CSSProperties
+            }
           >
-            {/* <img src={project.mainImage} alt={project.title} />
-            {project.additionalImages?.map((image, index) => (
-              <img key={index} src={image} alt={`${project.title} ${index}`} />
-            ))} */}
             {imagesFirstSet}
-            {/* Second set of images */}
-            {/* <img src={project.mainImage} alt={project.title} />
-            {project.additionalImages?.map((image, index) => (
-              <img key={index} src={image} alt={`${project.title} ${index}`} />
-            ))} */}
             {imagesSecondSet}
           </div>
         </div>
