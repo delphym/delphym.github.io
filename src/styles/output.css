@@ -560,6 +560,10 @@ video {
   left: 1rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }

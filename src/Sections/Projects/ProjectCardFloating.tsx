@@ -26,6 +26,7 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
       const imageCount = 1 + (project.additionalImages?.length ?? 0) // mainImage + additionalImages
       const duration = imageCount * 5 // 5 seconds per image
       setAnimationDuration(`${duration}s`)
+      console.log('Animation duration: ', duration)
 
       // Calculate dynamically width of the images
       if (!containerRef.current) return
