@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   faCss,
   faJs,
@@ -7,8 +7,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-import SkillTile from '../Skills/SkillTile'
 import projectData from '../../data/projects.json'
+import ProjectCard from './ProjectCard'
+import ProjectCardFloating from './ProjectCardFloating'
 
 // Map string keys from JSON to actual Font Awesome icon objects:
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
@@ -22,6 +23,42 @@ const iconsMap: { [key: string]: IconDefinition } = {
 }
 
 const Projects = () => {
+  // 1) Which project is selected? (null = none)
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projectData)[0] | null
+  >(null)
+
+  // 2) Is the lightbox open (true) or closed (false)?
+  const [isOpen, setIsOpen] = useState(false)
+
+  /** Clicking a card:
+   *  - store that project's data in state
+   *  - set isOpen to true so the lightbox can fade in
+   */
+  const handleCardClick = (project: (typeof projectData)[0]) => {
+    // 1) Set the project so it’s now in the DOM but isOpen is still false
+    setSelectedProject(project)
+    setIsOpen(false)
+    // 2) Wait a moment so React commits that render
+    //    Then set isOpen to true => triggers fade-in
+    setTimeout(() => {
+      setIsOpen(true)
+    }, 50) // or 50ms for a more guaranteed 2-step render
+  }
+
+  /** Closing the lightbox:
+   *  - fade out by setting isOpen to false
+   *  - after fade-out transition, remove the project from state
+   */
+  const closeLightbox = () => {
+    setIsOpen(false)
+    // Wait for the CSS transition to finish, e.g., 300ms
+    // Then remove the project from state
+    setTimeout(() => {
+      setSelectedProject(null)
+    }, 300)
+  }
+
   return (
     <div id="Projects">
       <div>
@@ -31,86 +68,31 @@ const Projects = () => {
       <div className="projects-content">
         {projectData.map((project, index) => (
           <React.Fragment key={index}>
-            <div className="project-item">
-              <div className="project-item-top-row">
-                <div className="project-item-header">
-                  <div className="project-item-header-content">
-                    {/* LEFT COLUMN (60% width) */}
-                    <div className="project-item-left-column">
-                      <h1>{project.title}</h1>
-                      {/* Description */}
-                      <div>
-                        <p className="project-item-left-column-content">
-                          {project.description}
-                        </p>
-                      </div>
-
-                      {/* Development */}
-                      <div>
-                        <h3 className="project-item-tech-stack">Development</h3>
-                        <p className="project-item-left-column-content">
-                          {project.development}
-                        </p>
-                      </div>
-                    </div>
-                    {/* RIGHT COLUMN (35% width) - MAIN IMAGE */}
-                    <div className="project-item-right-column">
-                      {project.mainImage && (
-                        <div className="project-item-main-image">
-                          <p></p>
-                          <img src={project.mainImage} alt={project.title} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="project-item-tech-stack">
-                <h3>Tech Stack</h3>
-                <div className="tech-stack-content">
-                  {project.techStack?.map((tech, i) => {
-                    const icon =
-                      iconsMap[tech.icon as keyof typeof iconsMap] || tech.icon
-                    return <SkillTile key={i} icon={icon} text={tech.name} />
-                  })}
-                </div>
-              </div>
-
-              <div className="project-item-links">
-                <h3>Links</h3>
-                <ul>
-                  {project.links?.deployment && (
-                    <li>
-                      <a
-                        target="_blank"
-                        href={project.links.deployment}
-                        rel="noreferrer"
-                      >
-                        Deployment
-                      </a>
-                    </li>
-                  )}
-                  {project.links?.github && (
-                    <li>
-                      <a
-                        target="_blank"
-                        href={project.links.github}
-                        rel="noreferrer"
-                      >
-                        GitHub
-                      </a>
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
+            <ProjectCard
+              project={project}
+              onClick={() => handleCardClick(project)}
+              iconsMap={iconsMap}
+            />
             {index < projectData.length - 1 && (
               <hr className="project-divider" />
             )}
           </React.Fragment>
         ))}
       </div>
+
+      {/* Always render the floating component, but pass the props:
+          - which project is selected
+          - whether it should be displayed or not (isOpen)
+          - how to close
+      */}
+      {/* {selectedProject !== null && ( */}
+      <ProjectCardFloating
+        project={selectedProject}
+        iconsMap={iconsMap} // <-- pass iconsMap to ProjectCardFloating
+        isOpen={isOpen}
+        onClose={closeLightbox}
+      />
+      {/* )} */}
     </div>
   )
 }
