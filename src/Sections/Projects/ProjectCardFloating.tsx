@@ -1,10 +1,10 @@
 import { XMarkIcon } from '@heroicons/react/24/solid'
 import SkillTile from '../Skills/SkillTile'
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
-import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt, faGithub } from '@fortawesome/free-solid-svg-icons'
-import React from 'react'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import React, { useState, useEffect } from 'react'
 
 interface ProjectCardFloatingProps {
   project: typeof import('../../data/projects.json')[0] | null
@@ -150,30 +150,34 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
         </div>
         <div className="mt-6">
           <h3>Links</h3>
-          <ul>
-            {project.links?.deployment && (
-              <li>
-                <a
-                  target="_blank"
-                  href={project.links.deployment}
-                  rel="noopener noreferrer"
-                >
-                  Deployment
-                </a>
-              </li>
-            )}
-            {project.links?.github && (
-              <li>
-                <a
-                  target="_blank"
-                  href={project.links.github}
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-            )}
-          </ul>
+          <div className="tech-stack-content">
+            <ul className="flex space-x-4">
+              {project.links?.deployment && (
+                <li>
+                  <a
+                    target="_blank"
+                    href={project.links.deployment}
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <span>Deployment</span>
+                  </a>
+                </li>
+              )}
+              {project.links?.github && (
+                <li>
+                  <a
+                    target="_blank"
+                    href={project.links.github}
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                    <span>GitHub</span>
+                  </a>
+                </li>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
