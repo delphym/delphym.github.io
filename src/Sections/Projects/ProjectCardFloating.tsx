@@ -2,6 +2,8 @@ import { XMarkIcon } from '@heroicons/react/24/solid'
 import SkillTile from '../Skills/SkillTile'
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt, faGithub } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 
 interface ProjectCardFloatingProps {
@@ -133,15 +135,20 @@ const ProjectCardFloating: React.FC<ProjectCardFloatingProps> = ({
             })}
           </div>
         </div>
-        <div>
+        <div className="mt-6">
           <h3>What I learned</h3>
           <ul>
             {project.objectives.map((objective, i) => (
-              <li key={i}>{objective}</li>
+              <li
+                key={`${project.title}-objective-${i}`}
+                className="list-disc ml-6"
+              >
+                {objective}
+              </li>
             ))}
           </ul>
         </div>
-        <div>
+        <div className="mt-6">
           <h3>Links</h3>
           <ul>
             {project.links?.deployment && (
