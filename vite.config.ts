@@ -5,12 +5,12 @@ import 'dotenv/config'
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'development'
-  console.log('isDev:', isDev)
+  console.info('isDev:', isDev)
 
   const base = isDev
     ? '/~delphym/REACT/delphym.github.io/' // Dev base
     : '/' // Prod base (GitHub pages)
-  console.log('base:', base)
+  console.info('base:', base)
 
   return {
     /*

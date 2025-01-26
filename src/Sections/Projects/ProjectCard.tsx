@@ -13,8 +13,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   iconsMap,
 }) => {
   if (!project) return null
-  console.log('Project folder: ', project.prjFolder)
-  console.log('Project main image: ', project.mainImage)
 
   return (
     <div className="project-item" onClick={onClick}>
