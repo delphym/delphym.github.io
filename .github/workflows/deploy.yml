@@ -3,14 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - portfolio # Change this to your default branch
+      - portfolio  # <--- Trigger deployment on pushes to "portfolio"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Check out the repo
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -22,24 +22,29 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build #  → this calls `vite build --mode production` (as defined in package.json)
+        run: npm run build  #  → this calls `vite build --mode production` (as defined in package.json)
 
       - name: Upload dist as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4   # <-- Not deprecated!
         with:
-          name: github-pages
-          path: './dist'
+          name: pages-artifact            # <-- A name for the artifact
+          path: ./dist                    # <-- The build output
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      pages: write # <--- Here we need to add permissions: pages: write to directly deploy to the Pages environment.
-      id-token: write
+      pages: write     # Required to deploy to GitHub Pages
+      id-token: write  # Required for OIDC token usage
 
     steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
-          artifact_name: github-pages
+          name: pages-artifact           # <-- Must match the name used above
+          path: dist                     # <-- Download into a "dist" folder
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1    # <-- Official GH Pages deployment action
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
