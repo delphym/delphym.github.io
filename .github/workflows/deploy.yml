@@ -28,8 +28,7 @@ jobs:
         run: npm run build  # e.g. "vite build"
 
       - name: List dist contents
-        run: ls -laR ./dist
-        run: du -hs ./dist
+        run: ls -laR ./dist && du -hs ./dist
 
       - name: Upload dist as artifact
         uses: actions/upload-artifact@v4
