@@ -24,11 +24,14 @@ jobs:
       - name: Build project
         run: npm run build  #  → this calls `vite build --mode production` (as defined in package.json)
 
+      - name: List dist contents
+        run: ls -laR ./dist
+
       - name: Upload dist as artifact
         uses: actions/upload-artifact@v4   # <-- Not deprecated!
         with:
           name: pages-artifact            # <-- A name for the artifact
-          path: ./dist                    # <-- The build output
+          path: './dist'                    # <-- The build output
 
   deploy:
     needs: build
@@ -37,14 +40,15 @@ jobs:
       pages: write     # Required to deploy to GitHub Pages
       id-token: write  # Required for OIDC token usage
 
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: pages-artifact           # <-- Must match the name used above
-          path: dist                     # <-- Download into a "dist" folder
+    # steps:
+    #   - name: Download artifact
+    #     uses: actions/download-artifact@v4
+    #     with:
+    #       name: pages-artifact           # <-- Must match the name used above
+    #       path: dist                     # <-- Download into a "dist" folder
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1    # <-- Official GH Pages deployment action
         with:
+          artifact_name: pages-artifact
           token: ${{ secrets.GITHUB_TOKEN }}
