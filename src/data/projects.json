@@ -27,7 +27,7 @@
     ],
     "links": {
       "deployment": "https://stellar-share-mania-roa-24.pushed.nz/",
-      "github": "https://github.com/manaia-roa-2024/stellar-share/"
+      "github": "https://github.com/delphym/DA-grp-stellar-share"
     }
   },
   {
@@ -54,7 +54,7 @@
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-birds-collection.devacademy.nz/",
-      "github": "https://github.com/manaia-roa-2024/my-fullstack-collection/tree/daniel"
+      "github": "https://github.com/delphym/DA-personal-bird-collection"
     }
   },
   {
@@ -78,7 +78,7 @@
       "Learning about CSS preprocessor like Sass"
     ],
     "links": {
-      "github": "https://github.com/manaia-roa-2024/group1"
+      "github": "https://github.com/delphym/DA-grp-dogs-tinder-app"
     }
   },
     {
@@ -101,7 +101,7 @@
     ],
     "links": {
       "deployment": "http://the-a-team-guess-the-country.devacademy.nz/",
-      "github": "https://github.com/manaia-roa-2024/guess-the-country"
+      "github": "https://github.com/delphym/DA-grp-guess-the-country"
     }
   },
   {
@@ -125,7 +125,7 @@
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-pokemons.devacademy.nz/",
-      "github": "https://github.com/manaia-roa-2024/query-em-all"
+      "github": "https://github.com/delphym/DA-personal-querry-em-all"
     }
   },
   {
@@ -149,7 +149,7 @@
     ],
     "links": {
       "deployment": "http://delphym-mania-chc-24-consuming-client-apis.devacademy.nz/",
-      "github": "https://github.com/manaia-roa-2024/consuming-clientside-apis"
+      "github": "https://github.com/delphym/DA-personal-consuming-clientside-apis"
     }
   }
 ]
