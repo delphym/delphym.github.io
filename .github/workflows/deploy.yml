@@ -31,19 +31,15 @@ jobs:
         run: ls -laR ./dist && du -hs ./dist
 
       - name: Upload dist as artifact
+        id: deployment
         uses: actions/upload-artifact@v4
         with:
           name: pages-artifact
-          path: ./dist
-
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: pages-artifact
-          path: ./dist
+          path: ./dist/
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v4
         with:
           artifact_name: pages-artifact # MUST match what you uploaded
           token: ${{ secrets.GITHUB_TOKEN }}
