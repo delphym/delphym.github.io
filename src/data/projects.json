@@ -100,7 +100,7 @@
       "Learning about react-router-dom, expres and vite servers, vitest, and eslint"
     ],
     "links": {
-      "deployment": "http://the-a-team-guess-the-country.devacademy.nz/",
+      "deployment": "https://delphym-da-guess-country.vercel.app/",
       "github": "https://github.com/delphym/DA-grp-guess-the-country"
     }
   },
