@@ -23,7 +23,7 @@ export default function Contact() {
         className="content-box content-width contact-box items-start"
         gap="15px"
       >
-        <h3>Find me on the following platforms</h3>
+        <h3>Reach me out on the following platforms</h3>
         <ContactItem
           icon={faLinkedin}
           text="LinkedIn"
