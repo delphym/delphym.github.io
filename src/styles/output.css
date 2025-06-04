@@ -851,6 +851,10 @@ a.link {
   color: rgb(241, 114, 110) !important;
 }
 
+a.link:hover {
+  color: rgb(235, 186, 52) !important;
+}
+
 .proj-img-sec {
 }
 

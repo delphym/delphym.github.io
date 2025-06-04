@@ -36,8 +36,15 @@ export default function About() {
             never done before, and it taught me that I could flourish and enjoy
             in any environment. This adaptability is something I've carried back
             into tech. When I realised I was missing front-end experience, I
-            turned to Dev Academy Aotearoa's immersive seventeen-week bootcamp
-            to expand my skill set. Not only did I sharpen my technical
+            turned to <a href="https://devacademy.co.nz/"
+              className='link'
+              target="_blank"
+              rel="noopener noreferrer">Dev Academy Aotearoa</a>'s immersive seventeen-week bootcamp style <a
+              href="https://devacademy.co.nz/our-courses/immersive-bootcamp/"
+              className='link'
+              target="_blank"
+              rel="noopener noreferrer"
+            >Full Stack Developer course</a> to expand my skill set. Not only did I sharpen my technical
             abilities in modern JavaScript frameworks like React, but I also
             improved my communication, feedback, and team-based problem-solving
             skills. Now, as a full-stack developer, I can bring value both
