@@ -1,18 +1,119 @@
 [
   {
+    "prjFolder": "HJunite",
+    "title": "HJ Unite",
+    "description": "Web app for planning and tracking manufacturing jobs at HamiltonJet",
+    "development": "HJ Unite is an internal manufacturing scheduling web app developed for HamiltonJet. I contributed as a Java contractor, modernising backend APIs, improving legacy UI with JSF/PrimeFaces, and integration with the M3 ERP system.",
+    "mainImage": "hjunite.png",
+    "additionalImages": [
+      "hjunite-1.png",
+      "hjunite-2.png",
+      "hjunite-3.png",
+      "hjunite-4.png",
+      "hjunite-5.png",
+      "hjunite-6.png",
+      "hjunite-7.png",
+      "hjunite-8.png"
+    ],
+    "techStack": [
+      {
+        "name": "Java 21",
+        "icon": "faJava"
+      },
+      {
+        "name": "Quarkus",
+        "icon": "images/quarkus.svg"
+      },
+      {
+        "name": "JSF/PrimeFaces",
+        "icon": "images/primefaces-logo.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "faDocker"
+      },
+      {
+        "name": "Jenkins",
+        "icon": "faJenkins"
+      },
+      {
+        "name": "MSSQL",
+        "icon": "faDatabase"
+      },
+      {
+        "name": "REST APIs",
+        "icon": "images/rest-api.webp"
+      },
+      {
+        "name": "M3 ERP",
+        "icon": "images/infor_logo.svg"
+      },
+      {
+        "name": "Git",
+        "icon": "faGit"
+      },
+      {
+        "name": "Jira",
+        "icon": "faJira"
+      }
+    ],
+    "objectives": [
+      "Enhanced backend APIs with Java 21 and Quarkus Java FW",
+      "Integration with M3 ERP for seamless data flows",
+      "Improved legacy UI for better usability",
+      "Resolved complex integration and bug issues",
+      "Streamlined scheduling and manufacturing logic",
+      "Collaborated with a project lead and CTO",
+      "Documented workflows and technical solutions",
+      "Strengthened DevOps with better build processes",
+      "Expanded skills in Docker containerisation for local development and deployment",
+      "Gained experience in large enterprise environments",
+      "Sharpened skills in Java, JSF/PrimeFaces, and troubleshooting"
+    ],
+    "links": {
+      "deployment": "",
+      "github": "https://github.com/HamiltonJet/Project_Unite"
+    }
+  },
+  {
     "prjFolder": "StellarShare",
     "title": "Stellar Share",
     "description": "Community sharing app with a sci-fi theme",
     "development": "This app was created in a group of 6 developers as our final group project for Dev Academy Aotearoa. It is a community item sharing / borrowing app with a fun sci-fi theme and focus on the social aspects of the community.",
     "mainImage": "StelarShare.webp",
-    "additionalImages": [ "TrolleGuy.png", "StellarShare-1.png", "StellarShare-2.png", "StellarShare-3.png", "StellarShare-4.png", "StellarShare-5.png" ],
+    "additionalImages": [
+      "TrolleGuy.png",
+      "StellarShare-1.png",
+      "StellarShare-2.png",
+      "StellarShare-3.png",
+      "StellarShare-4.png",
+      "StellarShare-5.png"
+    ],
     "techStack": [
-      { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" },
-      { "name": "SQLite", "icon": "faDatabase" },
-      { "name": "Auth0", "icon": "images/auth0.svg" }
+      {
+        "name": "Tailwind CSS",
+        "icon": "images/tailwind-css-2.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      },
+      {
+        "name": "SQLite",
+        "icon": "faDatabase"
+      },
+      {
+        "name": "Auth0",
+        "icon": "images/auth0.svg"
+      }
     ],
     "objectives": [
       "Project management and work coordination in a team of six",
@@ -36,14 +137,35 @@
     "description": "A Web application keeping a detailed list of birds observations.",
     "development": "A two-person full-stack project. It contains node modules, SQLite database to store the bird data, routes, API requests, and React component using React Query. The app is a bird collection app that allows users to keep a detailed list of bird observations.",
     "mainImage": "birdCollection.png",
-    "additionalImages": [ "birdCollection-1.jpg", "birdCollection-2.png"],
+    "additionalImages": [
+      "birdCollection-1.jpg",
+      "birdCollection-2.png"
+    ],
     "techStack": [
-      { "name": "Tailwind CSS", "icon": "images/tailwind-css-2.svg" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" },
-      { "name": "React Forms", "icon": "images/react-forms.png" },
-      { "name": "SQLite", "icon": "faDatabase" }
+      {
+        "name": "Tailwind CSS",
+        "icon": "images/tailwind-css-2.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      },
+      {
+        "name": "React Forms",
+        "icon": "images/react-forms.png"
+      },
+      {
+        "name": "SQLite",
+        "icon": "faDatabase"
+      }
     ],
     "objectives": [
       "Implementing a full-stack application using React, TypeScript, and SQLite",
@@ -63,12 +185,27 @@
     "description": "FullStack single-page application for canine connections.",
     "development": "This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a simple, single-page application that allows users to create a profile for their dog, and connect with other dog owners in their area.",
     "mainImage": "dogApp.png",
-    "additionalImages": ["dogApp-1.png","dogApp-2.png"],
+    "additionalImages": [
+      "dogApp-1.png",
+      "dogApp-2.png"
+    ],
     "techStack": [
-      { "name": "Sass CSS", "icon": "faCss" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" }
+      {
+        "name": "Sass CSS",
+        "icon": "faCss"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      }
     ],
     "objectives": [
       "Learning about React, TypeScript, and the Context API",
@@ -81,18 +218,32 @@
       "github": "https://github.com/delphym/DA-grp-dogs-tinder-app"
     }
   },
-    {
+  {
     "prjFolder": "GuessCountry",
     "title": "Guess Country",
     "description": "A flag / country guessing game.",
     "development": "This is a front end single page application. This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds countries and territories.",
     "mainImage": "guessCountry.png",
-    "additionalImages": [ "guessCountry-1.png" ],
+    "additionalImages": [
+      "guessCountry-1.png"
+    ],
     "techStack": [
-      { "name": "CSS", "icon": "faCss" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" }
+      {
+        "name": "CSS",
+        "icon": "faCss"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      }
     ],
     "objectives": [
       "Learning about React, TypeScript",
@@ -110,12 +261,28 @@
     "description": "Simple site that pulls pokemon info from the public Poké API",
     "development": "This app was one of the first I built as a part of my study at Dev Academy Aotearoa. It is a simple app that pulls information on all pokemon from the publicly available poke API, and displays info on each one.",
     "mainImage": "poki-go.jpg",
-    "additionalImages": [ "poke-1.png", "poke-2.png", "poke-3.png"],
+    "additionalImages": [
+      "poke-1.png",
+      "poke-2.png",
+      "poke-3.png"
+    ],
     "techStack": [
-      { "name": "CSS", "icon": "faCss" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" }
+      {
+        "name": "CSS",
+        "icon": "faCss"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      }
     ],
     "objectives": [
       "Learning about React, TypeScript",
@@ -134,12 +301,29 @@
     "description": "A site that pulls data from a number of public APIs",
     "development": "This simple site is one of the first plays with consuming clientside APIs. I created that of my study at Dev Academy Aotearoa. It is a simple app that pulls information from publicly available APIs to practice querying in React and Typescript, and displays info on each one.",
     "mainImage": "APICalls.jpg",
-    "additionalImages": [ "APICalls-1.png", "APICalls-2.png", "APICalls-3.png", "APICalls-4.png"],
+    "additionalImages": [
+      "APICalls-1.png",
+      "APICalls-2.png",
+      "APICalls-3.png",
+      "APICalls-4.png"
+    ],
     "techStack": [
-      { "name": "CSS", "icon": "faCss" },
-      { "name": "JavaScript", "icon": "faJs" },
-      { "name": "TypeScript", "icon": "images/typescript-svgrepo-com.svg" },
-      { "name": "React", "icon": "faReact" }
+      {
+        "name": "CSS",
+        "icon": "faCss"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      }
     ],
     "objectives": [
       "Learning about React, TypeScript",

@@ -4,6 +4,11 @@ import {
   faJs,
   faNodeJs,
   faReact,
+  faJava,
+  faDocker,
+  faJenkins,
+  faGit,
+  faJira
 } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
@@ -20,6 +25,11 @@ const iconsMap: { [key: string]: IconDefinition } = {
   faNodeJs,
   faReact,
   faDatabase,
+  faJava,
+  faDocker,
+  faJenkins,
+  faGit,
+  faJira
 }
 
 const Projects = () => {
