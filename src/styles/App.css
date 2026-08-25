@@ -49,6 +49,29 @@ section {
   padding-bottom: 60px;
 }
 
+.intro-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.intro-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.intro-particles canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.intro-content {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
 #root {
   color: white;
   background-color: #02495a;
