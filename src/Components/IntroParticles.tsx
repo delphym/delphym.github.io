@@ -6,10 +6,18 @@ import {
   type ISourceOptions,
 } from '@tsparticles/engine'
 import { loadSlim } from '@tsparticles/slim'
+import { loadTrailEffect } from '@tsparticles/effect-trail'
+import {
+  loadPolygonPath,
+  polygonPathName,
+} from '@tsparticles/path-polygon'
+import { loadEmittersPlugin } from '@tsparticles/plugin-emitters'
 
 let engineInitialization: Promise<void> | undefined
 
-const options: ISourceOptions = {
+type ParticleVariant = 'classic' | 'hexagon'
+
+const classicOptions: ISourceOptions = {
   fullScreen: {
     enable: false,
   },
@@ -83,9 +91,105 @@ const options: ISourceOptions = {
   detectRetina: true,
 }
 
+const hexagonOptions: ISourceOptions = {
+  fullScreen: {
+    enable: false,
+  },
+  background: {
+    color: {
+      value: 'transparent',
+    },
+  },
+  fpsLimit: 60,
+  particles: {
+    color: {
+      value: '#f1726e',
+      animation: {
+        enable: true,
+        speed: 8,
+      },
+    },
+    effect: {
+      type: 'trail',
+      options: {
+        trail: {
+          length: 50,
+          minWidth: 4,
+        },
+      },
+    },
+    move: {
+      direction: MoveDirection.none,
+      enable: true,
+      outModes: {
+        default: OutMode.destroy,
+      },
+      path: {
+        clamp: false,
+        enable: true,
+        delay: {
+          value: 0,
+        },
+        generator: polygonPathName,
+        options: {
+          sides: 6,
+          turnSteps: 30,
+          angle: 30,
+        },
+      },
+      random: false,
+      speed: 3,
+      straight: false,
+    },
+    number: {
+      value: 0,
+    },
+    opacity: {
+      value: 1,
+    },
+    shape: {
+      type: 'circle',
+    },
+    size: {
+      value: 2,
+    },
+  },
+  emitters: {
+    direction: MoveDirection.none,
+    rate: {
+      quantity: 1,
+      delay: 0.25,
+    },
+    size: {
+      width: 0,
+      height: 0,
+    },
+    position: {
+      x: 50,
+      y: 50,
+    },
+  },
+  detectRetina: true,
+}
+
+function getParticleVariant(): ParticleVariant {
+  const requestedVariant = new URLSearchParams(window.location.search).get(
+    'particles',
+  )
+
+  if (requestedVariant === 'classic' || requestedVariant === 'hexagon') {
+    return requestedVariant
+  }
+
+  return Math.random() < 0.5 ? 'classic' : 'hexagon'
+}
+
 function initializeEngine() {
   engineInitialization ??= initParticlesEngine(async (engine) => {
     await loadSlim(engine)
+    await loadTrailEffect(engine)
+    await loadPolygonPath(engine)
+    await loadEmittersPlugin(engine)
   })
 
   return engineInitialization
@@ -93,6 +197,8 @@ function initializeEngine() {
 
 export default function IntroParticles() {
   const [initialized, setInitialized] = useState(false)
+  const [variant] = useState<ParticleVariant>(getParticleVariant)
+  const options = variant === 'classic' ? classicOptions : hexagonOptions
 
   useEffect(() => {
     let active = true
@@ -114,6 +220,7 @@ export default function IntroParticles() {
 
   return (
     <Particles
+      key={variant}
       id="intro-particles"
       className="intro-particles"
       options={options}
