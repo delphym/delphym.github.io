@@ -726,6 +726,7 @@ section {
 .intro-content {
   position: relative;
   z-index: 1;
+  padding: clamp(24px, 4vw, 56px) clamp(20px, 6vw, 96px);
   pointer-events: none;
 }
 

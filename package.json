@@ -20,6 +20,7 @@
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/path-polygon": "^3.9.1",
     "@tsparticles/plugin-emitters": "^3.9.1",
+    "@tsparticles/plugin-emitters-shape-square": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "autoprefixer": "^10.4.20",

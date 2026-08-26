@@ -9,7 +9,7 @@ export default function Intro() {
       gap="0px"
     >
       <IntroParticles />
-      <div className="intro-content">
+      <div id="intro-title" className="intro-content">
         <h1 className="font-bold text-center">Daniel Mladek</h1>
         <h2 className="text-center">A Full Stack Developer</h2>
       </div>

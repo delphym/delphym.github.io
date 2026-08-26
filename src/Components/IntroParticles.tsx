@@ -12,6 +12,7 @@ import {
   polygonPathName,
 } from '@tsparticles/path-polygon'
 import { loadEmittersPlugin } from '@tsparticles/plugin-emitters'
+import { loadEmittersShapeSquare } from '@tsparticles/plugin-emitters-shape-square'
 
 let engineInitialization: Promise<void> | undefined
 
@@ -155,18 +156,15 @@ const hexagonOptions: ISourceOptions = {
     },
   },
   emitters: {
+    domId: 'intro-title',
     direction: MoveDirection.none,
+    fill: false,
     rate: {
       quantity: 1,
       delay: 0.25,
     },
-    size: {
-      width: 0,
-      height: 0,
-    },
-    position: {
-      x: 50,
-      y: 50,
+    shape: {
+      type: 'square',
     },
   },
   detectRetina: true,
@@ -190,6 +188,7 @@ function initializeEngine() {
     await loadTrailEffect(engine)
     await loadPolygonPath(engine)
     await loadEmittersPlugin(engine)
+    await loadEmittersShapeSquare(engine)
   })
 
   return engineInitialization
