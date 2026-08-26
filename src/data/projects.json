@@ -1,5 +1,47 @@
 [
   {
+    "prjFolder": "Sheila-AfricanTouch",
+    "title": "Hair Braiding Salon",
+    "description": "African Touch – Hair Braiding is a business web presentation.",
+    "development": "African Touch is a website for a hair braiding business. It provides information about services, showcases hairstyles, and includes a contact form for booking appointments.",
+    "mainImage": "AfricanTouch.gif",
+    "additionalImages": [
+      "AfricanTouch-1.png",
+      "AfricanTouch-2.png",
+      "AfricanTouch-3.png"
+    ],
+    "techStack": [
+      {
+        "name": "Tailwind CSS",
+        "icon": "images/tailwind-css-2.svg"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      }
+    ],
+    "objectives": [
+      "Design a Single Page Application (SPA) for a hair braiding business",
+      "Leveraging React, TypeScript, and Tailwind CSS",
+      "Implementing a responsive and mobile-friendly design",
+      "Delivered MVP within a tight timeframe, showcasing adaptability and efficiency",
+      "Provided a user-friendly interface for clients to explore services and book appointments",
+      "Presented possible path forward for future development and enhancements, including features like booking system, payment integration, and more"
+    ],
+    "links": {
+      "deployment": "https://africantouch-hairbraiding.kiwi-check.workers.dev/",
+      "github": "https://github.com/delphym/AfricanTouch-HairBraiding"
+    }
+  },
+  {
     "prjFolder": "HJunite",
     "title": "HJ Unite",
     "description": "Web app for planning and tracking manufacturing jobs at HamiltonJet",
@@ -71,7 +113,7 @@
       "Sharpened skills in Java, JSF/PrimeFaces, and troubleshooting"
     ],
     "links": {
-      "deployment": "",
+      "deployment": "https://unite.hamjet.co.nz/",
       "github": "https://github.com/HamiltonJet/Project_Unite"
     }
   },
@@ -80,7 +122,7 @@
     "title": "Stellar Share",
     "description": "Community sharing app with a sci-fi theme",
     "development": "This app was created in a group of 6 developers as our final group project for Dev Academy Aotearoa. It is a community item sharing / borrowing app with a fun sci-fi theme and focus on the social aspects of the community.",
-    "mainImage": "StelarShare.webp",
+    "mainImage": "StellarShare.webp",
     "additionalImages": [
       "TrolleGuy.png",
       "StellarShare-1.png",
