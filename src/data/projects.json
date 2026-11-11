@@ -207,7 +207,8 @@
       "Learning about React, TypeScript",
       "Implementing a front-end application using React, TypeScript, and client-side APIs",
       "Learning about react-router-dom, client-side routing, and vite servers, vitest, and eslint",
-      "Understanding and using React Hooks, such as useState and useEffect, and their applications in functional components."
+      "Understanding and using React Hooks, such as useState and useEffect, and their applications in functional components.",
+      "Learned about hosting and deploying React applications, e.g. Vercel, Cloudflare Pages, Netlify, ..."
     ],
     "links": {
       "deployment": "https://guess-the-country-flame.vercel.app/",
