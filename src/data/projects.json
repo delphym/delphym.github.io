@@ -262,12 +262,15 @@
   },
   {
     "prjFolder": "GuessCountry",
-    "title": "Guess Country",
+    "title": "Guess the Country",
     "description": "A flag / country guessing game.",
-    "development": "This is a front end single page application. This app was created in a group of 4 developers as a part of my study at Dev Academy Aotearoa. It is a flag guessing game containing all of the worlds countries and territories.",
+    "development": "This is a front end single page application. This app was originally created in a group of 4 developers as a part of my study at Dev Academy Aotearoa and later enhanced by me. It is a flag guessing game containing all of the worlds countries and territories.",
     "mainImage": "guessCountry.png",
     "additionalImages": [
-      "guessCountry-1.png"
+      "guessCountry-1.png",
+      "guessCountry-2.png",
+      "guessCountry-3.png",
+      "guessCountry-4.png"
     ],
     "techStack": [
       {
@@ -290,10 +293,11 @@
     "objectives": [
       "Learning about React, TypeScript",
       "Implementing a front-end application using React, TypeScript, and client-side APIs",
-      "Learning about react-router-dom, expres and vite servers, vitest, and eslint"
+      "Learning about react-router-dom, client-side routing, and vite servers, vitest, and eslint",
+      "Understanding and using React Hooks, such as useState and useEffect, and their applications in functional components."
     ],
     "links": {
-      "deployment": "https://delphym-da-guess-country.vercel.app/",
+      "deployment": "https://guess-the-country-flame.vercel.app/",
       "github": "https://github.com/delphym/DA-grp-guess-the-country"
     }
   },

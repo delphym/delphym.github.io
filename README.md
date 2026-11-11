@@ -1,3 +1,7 @@
+# TODO
+Zkusi naimplementovat do spodu stranky tento CodePen:
+https://codepen.io/editor/grauconejo13/pen/01a19f17-72ac-7126-af68-406e31973978
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
