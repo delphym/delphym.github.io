@@ -18,6 +18,10 @@ let engineInitialization: Promise<void> | undefined
 
 type ParticleVariant = 'classic' | 'hexagon'
 
+// Both variants are rendered by tsParticles through its React integration.
+// Engine: https://github.com/tsparticles/tsparticles
+// React integration: https://github.com/tsparticles/react
+// Classic linked-particle configuration, with portfolio-specific styling.
 const classicOptions: ISourceOptions = {
   fullScreen: {
     enable: false,
@@ -92,6 +96,9 @@ const classicOptions: ISourceOptions = {
   detectRetina: true,
 }
 
+// Adapted from Matteo Bruni's "tsParticles Hexagon Path" demo.
+// Reference: https://codepen.io/matteobruni/pen/ZExaQyB
+// Adjusted colors, section bounds and emission around the intro title.
 const hexagonOptions: ISourceOptions = {
   fullScreen: {
     enable: false,
