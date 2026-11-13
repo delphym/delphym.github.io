@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite. To rebuild styles automatically while developing, run `npm run watch:css` in a separate terminal.
+Open the local URL printed by Vite. Vite automatically processes Tailwind and CSS changes during development.
 
 ## Production build
 
