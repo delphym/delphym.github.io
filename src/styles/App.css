@@ -1,3 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Leave the 70px fixed navigation and a little breathing room above anchors. */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+#Home {
+  scroll-margin-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 h1 {
   font-size: 80px !important;
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;

@@ -5,6 +5,7 @@ export default function Intro() {
   return (
     <VertBox
       tag="section"
+      id="Home"
       className="intro-section items-center justify-center h-screen"
       gap="0px"
     >

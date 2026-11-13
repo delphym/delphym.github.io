@@ -8,7 +8,7 @@ export default function Navigation(){
       <CVBox/>
     </Box>
     <Box className="justify-center nav-center">
-      <NavTab text="Home" hashId="/"/>
+      <NavTab text="Home" hashId="#Home"/>
       <NavTab text="About" hashId="#About"/>
       <NavTab text="Skills" hashId="#Skills"/>
       <NavTab text="Projects" hashId="#Projects"/>
