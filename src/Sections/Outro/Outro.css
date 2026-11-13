@@ -19,6 +19,7 @@
   z-index: 0;
   pointer-events: none;
   /* Fade the entire scenery, including its vignette, into the page background. */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 240px);
   mask-image: linear-gradient(to bottom, transparent, #000 240px);
 }
 .outro-scenery::after {
@@ -103,6 +104,7 @@
   border-radius: inherit;
   background: linear-gradient(135deg, #b5c8db, #f7fbff 65%, #dceaff);
   /* Offset circular cutout leaves a thin, lower-right silver crescent. */
+  -webkit-mask-image: radial-gradient(circle at 43% 41%, transparent 0 64%, #000 65%);
   mask-image: radial-gradient(circle at 43% 41%, transparent 0 64%, #000 65%);
 }
 

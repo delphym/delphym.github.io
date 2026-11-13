@@ -14,7 +14,6 @@ Open the local URL printed by Vite. Vite automatically processes Tailwind and CS
 ## Production build
 
 ```sh
-npm run build:css
 npm run build
 ```
 
