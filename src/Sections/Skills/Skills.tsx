@@ -1,6 +1,11 @@
 import { Box, VertBox } from '../../Components/Box'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCode,
+  faDatabase,
+  faChartSimple,
+  faCube,
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faCss,
   faHtml5,
@@ -16,6 +21,7 @@ import {
   faApple,
   faWindows,
   faLinux,
+  faNpm,
 } from '@fortawesome/free-brands-svg-icons'
 import SkillTile from './SkillTile'
 
@@ -49,6 +55,11 @@ export default function Skills() {
               text="TypeScript"
             />
             <SkillTile icon={faReact} text="React" />
+            <SkillTile icon={faNpm} text="npmjs" />
+            <SkillTile icon={'images/vite.svg'} text="Vite" />
+            <SkillTile icon={'images/playwright-logo.svg'} text="Playwright" />
+            <SkillTile icon={faChartSimple} text="Chart.js" />
+            <SkillTile icon={faCube} text="Webpack" />
             <SkillTile icon={faNodeJs} text="NodeJS" />
             <SkillTile icon={faJava} text="Java" />
             <SkillTile icon={'images/spring-3.svg'} text="Spring" />

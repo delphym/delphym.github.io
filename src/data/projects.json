@@ -1,5 +1,67 @@
 [
   {
+    "prjFolder": "AforReporter",
+    "title": "Afor Reporter",
+    "description": "A custom Playwright Test reporter that generates an Afor-branded HTML report alongside Playwright's standard HTML report.",
+    "development": "Built from scratch for Playwright, using the original Java and Selenium Afor Reporter as a reference for its appearance and functionality. A major milestone was extracting embedded UI code from the monolithic report-writer.ts into a modular React application with typed, reusable components and separate result-processing utilities.",
+    "mainImage": "AforReporter.gif",
+    "additionalImages": [
+      "AforReporter-1.png",
+      "AforReporter-2.png",
+      "AforReporter-3.png",
+      "AforReporter-4.png",
+      "AforReporter-5.png",
+      "AforReporter-6.png"
+    ],
+    "techStack": [
+      {
+        "name": "CSS",
+        "icon": "faCss"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "faJs"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "images/typescript-svgrepo-com.svg"
+      },
+      {
+        "name": "React",
+        "icon": "faReact"
+      },
+      {
+        "name": "Playwright",
+        "icon": "images/playwright-logo.svg"
+      },
+      {
+        "name": "npmjs",
+        "icon": "faNpm"
+      },
+      {
+        "name": "Chart.js",
+        "icon": "faChartSimple"
+      },
+      {
+        "name": "Webpack",
+        "icon": "faCube"
+      }
+    ],
+    "objectives": [
+      "Modular React architecture and reusable, typed components",
+      "Practical strategies for refactoring a monolithic report writer",
+      "Separation of concerns between report generation, presentation, and data processing",
+      "React state management and recursive component composition for nested test reports",
+      "Handling multiple separated DOM trees for efficient UI updates and printing",
+      "Playwright reporter integration and handling of test results, steps, and attachments",
+      "Data visualization with Chart.js and frontend asset bundling with Webpack"
+    ],
+    "links": {
+      "deployment": "https://www.npmjs.com/package/@aforautomation/playwright-reporter",
+      "github": "https://github.com/afor-automation/playwright/"
+    }
+  },
+  {
     "prjFolder": "Sheila-AfricanTouch",
     "title": "Hair Braiding Salon",
     "description": "African Touch – Hair Braiding is a business web presentation.",
@@ -43,7 +105,7 @@
   },
   {
     "prjFolder": "HJunite",
-    "title": "HJ Unite",
+    "title": "HamiltonJet Unite",
     "description": "Web app for planning and tracking manufacturing jobs at HamiltonJet",
     "development": "HJ Unite is an internal manufacturing scheduling web app developed for HamiltonJet. I contributed as a Java contractor, modernising backend APIs, improving legacy UI with JSF/PrimeFaces, and integration with the M3 ERP system.",
     "mainImage": "hjunite.png",
