@@ -40,6 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   <img
                     src={`images/${project.prjFolder}/${project.mainImage}`}
                     alt={project.title}
+                    loading="lazy"
                   />
                 </div>
               )}

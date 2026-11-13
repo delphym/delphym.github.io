@@ -8,9 +8,14 @@ import {
   faDocker,
   faJenkins,
   faGit,
-  faJira
+  faJira,
+  faNpm,
 } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import {
+  faDatabase,
+  faChartSimple,
+  faCube,
+} from '@fortawesome/free-solid-svg-icons'
 
 import projectData from '../../data/projects.json'
 import ProjectCard from './ProjectCard'
@@ -29,7 +34,10 @@ const iconsMap: { [key: string]: IconDefinition } = {
   faDocker,
   faJenkins,
   faGit,
-  faJira
+  faJira,
+  faChartSimple,
+  faCube,
+  faNpm,
 }
 
 const Projects = () => {
