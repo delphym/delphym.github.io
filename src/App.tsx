@@ -5,6 +5,7 @@ import Contact from './Sections/Contact/Contact'
 import Intro from './Sections/Intro/Intro'
 import Projects from './Sections/Projects/Projects'
 import Skills from './Sections/Skills/Skills'
+import Outro from './Sections/Outro/Outro'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <Outro />
     </>
   )
 }
