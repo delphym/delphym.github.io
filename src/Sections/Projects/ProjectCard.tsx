@@ -17,35 +17,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="project-item" onClick={onClick}>
       <div className="project-item-top-row">
-        <div className="project-item-header">
-          <div className="project-item-header-content">
-            <div className="project-item-left-column">
-              <h1>{project.title}</h1>
-              <div>
-                <p className="project-item-left-column-content">
-                  {project.description}
-                </p>
-              </div>
-              <div>
-                <h3 className="project-item-tech-stack">Development</h3>
-                <p className="project-item-left-column-content">
-                  {project.development}
-                </p>
-              </div>
-            </div>
-            <div className="project-item-right-column">
-              {project.mainImage && (
-                <div className="project-item-main-image">
-                  <p></p>
-                  <img
-                    src={`images/${project.prjFolder}/${project.mainImage}`}
-                    alt={project.title}
-                    loading="lazy"
-                  />
-                </div>
-              )}
-            </div>
+        <div className="project-item-left-column">
+          <h1>{project.title}</h1>
+          <div>
+            <p className="project-item-left-column-content">
+              {project.description}
+            </p>
           </div>
+          <div>
+            <h3 className="project-item-tech-stack">Development</h3>
+            <p className="project-item-left-column-content">
+              {project.development}
+            </p>
+          </div>
+        </div>
+        <div className="project-item-right-column">
+          {project.mainImage && (
+            <div className="project-item-main-image">
+              <img
+                src={`images/${project.prjFolder}/${project.mainImage}`}
+                alt={project.title}
+                loading="lazy"
+              />
+            </div>
+          )}
         </div>
       </div>
 

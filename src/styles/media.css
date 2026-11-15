@@ -46,3 +46,85 @@
     font-size: 16px;
   }
 }
+/* Stack project content before either column becomes too narrow to read. */
+@media (max-width: 900px) {
+  .project-item-top-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .project-item-main-image {
+    margin: 0;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none !important;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #Projects > div:first-child,
+  .projects-content {
+    width: 90%;
+  }
+
+  .projects-content {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .project-divider {
+    margin: -20px 0;
+  }
+
+  .project-card-floating {
+    width: calc(100% - 32px);
+    max-height: calc(100dvh - 160px);
+    padding: 20px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-tab {
+    padding: 0 7px;
+  }
+
+  .content-box {
+    padding: 20px;
+  }
+
+  .projects-content {
+    padding: 12px;
+  }
+
+  .project-item {
+    padding: 12px;
+  }
+
+  .project-item-top-row {
+    margin-top: 8px;
+  }
+
+  .skill-brick {
+    padding: 0 8px;
+    max-width: 100%;
+  }
+
+  .skill-brick-text {
+    white-space: normal;
+  }
+}
+
+@media (hover: none) {
+  .project-item:hover,
+  .project-item h1:hover,
+  .project-item-main-image:hover {
+    transform: none;
+  }
+}

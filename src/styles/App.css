@@ -3,7 +3,8 @@ html {
 }
 
 /* Leave the 70px fixed navigation and a little breathing room above anchors. */
-section[id] {
+section[id],
+#Projects {
   scroll-margin-top: 90px;
 }
 
@@ -322,35 +323,22 @@ a.link {
   margin: 20px 0;
 }
 .project-item-top-row {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-bottom: -20px;
-}
-
-.project-item-header {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin-bottom: 20px;
-}
-.project-item-header-content {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 0;
 }
 
 .project-item-left-column {
-  flex: 0 0 60%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .project-item-left-column-content {
-  font-size: '17px';
-  line-height: '1.5';
-  margin: '0 0 10px 0';
+  line-height: 1.5;
+  margin: 0 0 10px;
 }
 
 .project-item-tech-stack {
@@ -395,7 +383,7 @@ a.link {
 }
 
 .project-item-right-column {
-  flex: 0 0 35%;
+  min-width: 0;
 }
 
 .project-item-main-image {
@@ -420,6 +408,8 @@ a.link {
 
 .project-item-main-image img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 5%;
   object-fit: contain;
 }
@@ -439,11 +429,12 @@ a.link {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   /* Center the floating card (flex approach) */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* ensure it is on top of everything else */
+  z-index: 1100; /* Above the fixed navigation. */
 
   /* Semi-transparent background + blur effect behind the card */
   background-color: rgba(2, 73, 90, 0.6); /* #02495a at ~60% opacity */
@@ -543,4 +534,10 @@ a.link {
   100% {
     transform: translateX(var(--move-dist));
   }
+}
+
+.project-item h1 {
+  font-size: clamp(32px, 4vw, 56px) !important;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
