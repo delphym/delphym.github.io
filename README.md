@@ -1,7 +1,5 @@
 # Daniel Mladek — Portfolio
 
-#TODO implement CodePen Glass effect: https://codepen.io/editor/vii120/pen/01a1a861-e97c-7de2-b634-f1e704a6f725
-
 My personal portfolio, built with React, TypeScript and Vite.
 
 ## Development
